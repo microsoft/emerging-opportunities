@@ -1,6 +1,7 @@
 # Verifiable Credentials News
 
-Link to project repo: [Verifiable Credentials](https://github.com/microsoft/Microsoft-Verifiable-Credentials-with-Azure-AD-)
+Link to projects: 
+- [Decentralized Identity](https://github.com/microsoft/Decentralized-Identity-and-Verifiable-Credentials)
 
 ## Current Work
 
