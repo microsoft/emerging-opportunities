@@ -38,7 +38,5 @@ The hack will be broken down into two sections, a kickoff meeting and the worksh
 * You will run a sample DNA-Seq pipeline on Cromwell and a RNA-Seq pipeline on Nextflow.
 * Use this time to discuss with your team and share some of your customer experiences.
 
-[Link to repo](https://github.com/microsoft/Genomics-Quickstart)
-
 ## How do you get involved?
 (link to ms form)
