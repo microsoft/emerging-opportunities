@@ -5,9 +5,9 @@
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 - Our team is assisting [MJH Life Sciences](https://www.mjhlifesciences.com/) as coaches and mentors.
 
-Upcoming Project:
+## Upcoming Project:
 
-- **MotherBox**
+**MotherBox**
 
 ## Ongoing Projects
 
