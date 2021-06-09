@@ -22,7 +22,8 @@ Genomics will play a central role in improving healthcare delivery for the fores
 * Ran through a sample workflow using both technologies.
 * Reviewed the output and how this can be used to empower downstream analytic processes.
 
-> Hackathon Agenda - 
+> Hackathon Agenda
+
 The hack will be broken down into two sections, a kickoff meeting and the workshop/hack.
 
 > Kick-off
