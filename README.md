@@ -2,7 +2,9 @@
 
 ## Our Current Work
 
-- [**Tech Serum**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. Our team is working with [MJH Life Sciences](https://www.mjhlifesciences.com/) to help out as coaches and mentors.
+[**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
+
+Our team is assisting [MJH Life Sciences](https://www.mjhlifesciences.com/) as coaches and mentors.
 
 Upcoming:
 
