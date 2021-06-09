@@ -6,7 +6,7 @@ What's happening
 
 ## Past Sprints
 
-What did participants learn?
+### What did participants learn?
 •	This hackathon introduced key concepts and terminology used in the industry.
 •	Some of the common workflows that our customers are using to derive insight from genomic information.
 •	Set up and configured Cromwell on Azure as well as Nextflow on Azure.
@@ -15,6 +15,7 @@ What did participants learn?
 
 Hackathon Agenda - 
 The hack will be broken down into two sections, a kickoff meeting and the workshop/hack.
+
 Kick-off
 
 •	We’ll cover the basics of genomics (DNA/RNA, Transcription, Translation etc.). If you’re are a beginner, checkout the quickstart and the video links that we sent out.
