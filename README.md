@@ -15,7 +15,7 @@ Click the links below to see details of each of the projects:
 
 [FHIRPower](./FHIR/FHIRPower)
 
-[Verifiable Credentails](./Verifiable-Credentials)
+[Verifiable Credentials](./Verifiable-Credentials)
 
 ## Past Hackathons
 
