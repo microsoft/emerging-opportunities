@@ -1,6 +1,8 @@
 # Genomics Hackathon News
 
-(This page will be updated every time we have new hackathons hosted)
+This page will be updated every time we have new hackathons hosted
+
+[Check out the starter kit and try out for yourself!](https://github.com/microsoft/Genomics-Quickstart)
 
 ## Upcoming Hackathon 
 
