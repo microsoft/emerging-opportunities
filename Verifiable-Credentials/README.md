@@ -5,8 +5,7 @@
 * VC contains attributes about the subjects to which they are issued, e.g., for a university diploma includes student’s field of study, year of graduation, and grade point average, etc.
   * A **subject** who receives the credential becomes the holder of the that credential which they store in their wallet – a mobile app on subject’s device
   * A **verifier** is a person or organization or thing who will verify the information shared by the subject
-    * For example, a student applies for a job, the employer requests access to view student’s digital diploma
-Employer (verifier) will verify the information contained the credential stored in the student wallet which is shared by the student with employer
+    * For example, a student applies for a job, the employer requests access to view student’s digital diploma, employer (verifier) will verify the information contained the credential stored in the student wallet which is shared by the student with employer
 
 ![image](https://user-images.githubusercontent.com/26188338/121603491-153f0c00-ca06-11eb-9c83-abf1f4f9d917.png)
 
