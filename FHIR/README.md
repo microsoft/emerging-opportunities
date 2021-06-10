@@ -15,7 +15,7 @@ It's a human readable health record that allows accessibility and interoperabili
 Application leveraging custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR to interact with records stored in FHIR
 
 ### OpenHack: FHIR
-[Click for more details](./Hackathon) 
+[Link to Hackathon Material](https://github.com/microsoft/OpenHack-FHIR) 
 
 Two day internal hackathon 
 
