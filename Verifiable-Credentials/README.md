@@ -3,7 +3,7 @@
 Link to projects: 
 - [Decentralized Identity](https://github.com/microsoft/Decentralized-Identity-and-Verifiable-Credentials)
 
-## Current Work
+## Current Sprint
 
 What's happening right now.
 
