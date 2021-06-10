@@ -25,4 +25,4 @@ Click the links below to see details of each of the projects:
 
 [NurseHack4Health](./NurseHack4Health)
 
-[OpenHack:FHIR](./FHIR/Hackathon/)
+[OpenHack:FHIR](./FHIR/Hackathon)
