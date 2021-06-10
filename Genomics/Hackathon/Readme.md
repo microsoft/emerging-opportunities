@@ -2,16 +2,21 @@
 
 (This page will be updated every time we have new hackathons hosted)
 
-## First Hackathon (Sprint 23)
+## Upcoming Hackathon 
 
-### What did participants learn?
+*no plans*
+
+## Past Sprints
+
+### First Hackathon (Sprint 23)
+#### What did participants learn?
 * This hackathon introduced key concepts and terminology used in the industry.
 * Some of the common workflows that our customers are using to derive insight from genomic information.
 * Set up and configured Cromwell on Azure as well as Nextflow on Azure.
 * Ran through a sample workflow using both technologies.
 * Reviewed the output and how this can be used to empower downstream analytic processes.
 
-### Hackathon Agenda
+#### Hackathon Agenda
 
 The hack will be broken down into two sections, a kickoff meeting and the workshop/hack.
 
