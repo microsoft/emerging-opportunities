@@ -1,5 +1,7 @@
 # Welcome to Emerging-Opportunities Update Repo!
 
+[Checkout out our backlog](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics). It should all be up to date
+
 ## Current Sprint (25)
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
