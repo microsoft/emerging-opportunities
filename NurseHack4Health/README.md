@@ -2,9 +2,16 @@
 
 ## What is it?
 
-## Projects
+*description*
 
-Link to our different repos
+## Upcoming Hackathon
+*tbd*
+
+## Past Hackathons
+
+### Spring 2021 
+
+Detailed info and Link to our different repos
 
 ### Would you like to be involved?
 
