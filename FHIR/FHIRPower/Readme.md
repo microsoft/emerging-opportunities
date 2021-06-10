@@ -1,6 +1,5 @@
 # FHIRPower News
 
-## Go and checkout out our project!
 [**link to repo**](https://github.com/microsoft/FHIRPower)
 
 ## What is it?
