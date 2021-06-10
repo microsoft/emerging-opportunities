@@ -8,7 +8,7 @@ This page will be updated every time we have new hackathons hosted
 
 *no plans*
 
-## Past Hachathons
+## Past Hackathons
 
 ### First Hackathon (Sprint 23)
 #### What did participants learn?
