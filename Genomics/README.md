@@ -6,9 +6,9 @@ During the past few sprints our team put together a one-day hackathon focused on
 
 ### Why should you learn about genomics on Azure?
 Genomics will play a central role in improving healthcare delivery for the foreseeable future. Some of the key areas include:
-* Drug discovery. As we've seen with COVID-19 vaccines, understanding the viral genome has led to vaccines produced at remarkable pace.
-* Precision medicine. By understanding both the disease as well as the patient's genome, pharma companies can produce more targeted therapies.
-* Rare diseases. Some of the most devasting diseases can now be better understood using genetics which will lead to cures.
+**Drug discovery** As we've seen with COVID-19 vaccines, understanding the viral genome has led to vaccines produced at remarkable pace.
+**Precision medicine** By understanding both the disease as well as the patient's genome, pharma companies can produce more targeted therapies.
+**Rare diseases** Some of the most devasting diseases can now be better understood using genetics which will lead to cures.
 
 ## Projects
 [**Hackathon (Sprint 23)**](./Hackathon) 
