@@ -10,11 +10,7 @@ Genomics will play a central role in improving healthcare delivery for the fores
 * Precision medicine. By understanding both the disease as well as the patient's genome, pharma companies can produce more targeted therapies.
 * Rare diseases. Some of the most devasting diseases can now be better understood using genetics which will lead to cures.
 
-## Current Work
-*on Hold*
-
-## Past Sprints
-
+## Projects
 [**Hackathon (Sprint 23)**](./Hackathon) 
 
 > What did participants learn?
