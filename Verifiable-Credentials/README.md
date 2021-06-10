@@ -12,3 +12,7 @@ What's happening right now.
 > Sprint 23
 
 > Sprint 24
+
+
+### Would you like to be involved?
+*link to MS Form will be coming soon*
