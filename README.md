@@ -15,7 +15,8 @@
 
 Click the links below to see details of each of the projects:
 
-[FHIRPower](./FHIR/FHIRPower)
+[FHIR](./FHIR)
+- [FHIRPower](./FHIR/FHIRPower)
 
 [Verifiable Credentials](./Verifiable-Credentials)
 
