@@ -7,21 +7,13 @@ It's a human readable health record that allows accessibility and interoperabili
 
 [Resource](https://www.healthit.gov/topic/standards-technology/standards/fhir-fact-sheets)
 
-## Current Sprint
-
-*on hold*
-
-## Past Sprints
-
-### FHIRPower 
+## FHIRPower 
 [Click for more details](./FHIRPower)
 
-We created custom connectors (usable in PowerAutomate, Flow and LogicApps) to connect to Microsoft's Azure API for FHIR. 
+Application leveraging custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR to interact with records stored in FHIR
 
-Developed a patient's and clinician's app using PowerApp. Using the custom connectors we were able to access the health records of (fake) patients and practitioners to create an Appointment between patients and doctors/practitioners.
-
-### OpenHack: FHIR
+## OpenHack: FHIR
 [Click for more details](./Hackathon) 
 
-We held a two day internal hackathon to learn more about how to leverage Azure's API for FHIR under different scenarios. 
+Two day internal hackathon 
 
