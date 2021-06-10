@@ -6,9 +6,9 @@
 
 Application that showcases the possibilities of Azure API for FHIR and custom connectors to interact with records in FHIR server.
 
-## Current Work
+## Current Sprint
 
-*on hold*
+*none*
 
 ## Past Sprints
 
