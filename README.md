@@ -1,6 +1,6 @@
 # Welcome to Emerging-Opportunities Update Repo!
 
-[Checkout out our backlog](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics). It should all be up to date
+[Checkout out our up to date backlog](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics)
 
 ## Current Sprint (25)
 
