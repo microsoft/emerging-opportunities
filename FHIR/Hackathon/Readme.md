@@ -1,10 +1,11 @@
 # OpenHack: FHIR
 
-Link to resource: [Click Here](https://github.com/microsoft/OpenHack-FHIR)
+[Link to repo](https://github.com/microsoft/OpenHack-FHIR)
 
-## Current Work
+## Current Sprint
+*none*
 
 ## Past Sprints
 
-## Contact
-(link to ms form)
+## Are you interested in helping out?
+(link to MS Forms will come soon)
