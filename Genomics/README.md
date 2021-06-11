@@ -15,6 +15,7 @@ Genomics will play a central role in improving healthcare delivery for the fores
 
 ## Projects
 > Sprint 23
+
 [**Hackathon**](./Hackathon) 
 
 ## How do you get involved?
