@@ -17,13 +17,13 @@ The NurseHack4Health virtual hackathon will use the MIT open-source license, one
 ## Reusable IPs 
 Here are some of the reusuable technologies we have built in order to help for future hackathons we or anyone else might want to run.
 
-[User Registration](https://github.com/microsoft/NH4H-UserReg) (ReactJS, MSAL, GraphQL) - This application acts as a middleware between the registration page and MSTeams. Once the user is registers (using Microsoft account) the application adds the user to NH4H's Teams so they can collaborate with hundreds of other participants through out the hackathon.  
+[**User Registration**](https://github.com/microsoft/NH4H-UserReg) (ReactJS, MSAL, GraphQL) - This application acts as a middleware between the registration page and MSTeams. Once the user is registers (using Microsoft account) the application adds the user to NH4H's Teams so they can collaborate with hundreds of other participants through out the hackathon.  
 
-[Team Builder](https://github.com/microsoft/NH4H-TeamBuilder) (ReactJS, SemanticUI) - This app allows participants to form their own team based on challenges they want to tackle and skills needed. It leverages their github id and automatically adds tie them to a github team/repo. 
+[**Team Builder**](https://github.com/microsoft/NH4H-TeamBuilder) (ReactJS, SemanticUI) - This app allows participants to form their own team based on challenges they want to tackle and skills needed. It leverages their github id and automatically adds tie them to a github team/repo. 
 
 > ([See all teams/repos](https://github.com/NurseHack4Health) formed during our past NH4H events)
                 
-[Gamification](https://github.com/microsoft/NH4H-GamificationUI) (ReactJS, SemanticUI) - This app gamifies the hackathon. Participants are awarded points when they accomplish the given tasks.
+[**Gamification**](https://github.com/microsoft/NH4H-GamificationUI) (ReactJS, SemanticUI) - This app gamifies the hackathon. Participants are awarded points when they accomplish the given tasks.
 
 ### Spring 2021 - NurseHack4Health: Improving Access to Care
 
