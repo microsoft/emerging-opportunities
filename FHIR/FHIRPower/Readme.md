@@ -1,6 +1,6 @@
 # FHIRPower News
 
-[**link to repo**](https://github.com/microsoft/FHIRPower)
+[**Go to FHIRPower repo**](https://github.com/microsoft/FHIRPower)
 
 ## What is it?
 
