@@ -22,5 +22,3 @@ We developed patient's and clinician's app using PowerApp and customer connecter
 - [Patient](https://www.hl7.org/fhir/patient.html)
 - [Practitioner](https://www.hl7.org/fhir/practitioner.html) 
 
-### Would you like to be involved?
-*link to MS Form will be coming soon*
