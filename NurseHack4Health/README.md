@@ -14,6 +14,17 @@ The NurseHack4Health virtual hackathon will use the MIT open-source license, one
 ## Past Hackathons
 [Event Repository](https://github.com/NurseHack4Health)
 
+## Reusable IPs 
+Here are some of the reusuable technologies we have built in order to help for future hackathons we or anyone else might want to run.
+
+[User Registration](https://github.com/microsoft/NH4H-UserReg) (ReactJS, MSAL, GraphQL) - This application acts as a middleware between the registration page and MSTeams. Once the user is registers (using Microsoft account) the application adds the user to NH4H's Teams so they can collaborate with hundreds of other participants through out the hackathon.  
+
+[Team Builder](https://github.com/microsoft/NH4H-TeamBuilder) (ReactJS, SemanticUI) - This app allows participants to form their own team based on challenges they want to tackle and skills needed. It leverages their github id and automatically adds tie them to a github team/repo. 
+
+- [See all teams/repos](https://github.com/NurseHack4Health) formed during our past NH4H events
+                
+[Gamification](https://github.com/microsoft/NH4H-GamificationUI)(ReactJS, SemanticUI) - This app gamifies the hackathon. Participants are awarded points when they accomplish the given tasks.
+
 ### Spring 2021 - NurseHack4Health: Improving Access to Care
 
 NurseHack4Health: Improving Access to Care is the third in a series of virtual global hackathons made possible through a unique collaboration between SONSIEL, Johnson & Johnson, Microsoft, and devup that assembles nurses, frontline health workers, corporate healthcare leaders, IT staff, startups, and investors to help solve healthcare challenges brought on and amplified by COVID-19. More than 2,000 nurses from the U.S. and around the globe have participated to date, including nurses from Canada, U.K., Africa, and Australia. The series originated during the onset of the pandemic when SONSIEL’s network of nurses gathered online to exchange bedside triage solutions, evolving protocols, and other insights to help save lives, demonstrating the significant role of nurses in healthcare innovation.
