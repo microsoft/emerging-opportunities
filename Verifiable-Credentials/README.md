@@ -39,10 +39,3 @@ The project delivered the following services:
 *	[Partner Portal](https://woodgrovevc.powerappsportals.com/) is developed as a Azure Power Portal application backed by Azure AD B2C as Identity Provider (IdP)
 *	[API Service](https://verifiablecredentialapi.azurewebsites.net/swagger/v1/swagger.json) which integrates the Microsoft REST API and SDK is developed as a DotNet API service and deployed to Azure App Service
 
-
-
-
-
-
-### Would you like to be involved?
-*link to MS Form will be coming soon*
