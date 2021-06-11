@@ -55,8 +55,3 @@ Five focus areas for the hackathon that participants can join and ideate against
 - Patient Transfer, Hand off and Huddle
 - Data and Reporting
 - Resiliency and Self-Care
-
-
-### Would you like to be involved?
-
-*link to MS Forms coming soon*
