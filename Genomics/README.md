@@ -14,6 +14,7 @@ Genomics will play a central role in improving healthcare delivery for the fores
 **Rare diseases** Some of the most devasting diseases can now be better understood using genetics which will lead to cures.
 
 ## Projects
+> Sprint 23
 [**Hackathon**](./Hackathon) 
 
 ## How do you get involved?
