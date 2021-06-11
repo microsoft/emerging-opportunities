@@ -11,9 +11,6 @@ The NurseHack4Health virtual hackathon will use the MIT open-source license, one
 ## Upcoming Hackathon
 *tbd*
 
-## Past Hackathons
-[Event Repository](https://github.com/NurseHack4Health)
-
 ## Reusable IPs 
 Here are some of the reusuable technologies we have built in order to help for future hackathons we or anyone else might want to run.
 
@@ -24,6 +21,9 @@ Here are some of the reusuable technologies we have built in order to help for f
 > ([See all teams/repos](https://github.com/NurseHack4Health) formed during our past NH4H events)
                 
 [**Gamification**](https://github.com/microsoft/NH4H-GamificationUI) (ReactJS, SemanticUI) - This app gamifies the hackathon. Participants are awarded points when they accomplish the given tasks.
+
+## Past Hackathons
+[Event Repository](https://github.com/NurseHack4Health)
 
 ### Spring 2021 - NurseHack4Health: Improving Access to Care
 
