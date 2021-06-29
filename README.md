@@ -13,7 +13,7 @@ Checkout the repo:
 [MotherBox](./MotherBox) (.NetCore/Blazor/GraphQL)
 
 - [GraphQL (HotChocolate)](./MotherBox/GraphQL)
-- [.NET](./MotherBox/.Net)
+- [.NET](./MotherBox/.NET)
 - [Azure Data Factory](./MotherBox/ADF)
 
 ## Ongoing Projects
