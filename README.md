@@ -9,6 +9,7 @@
 > unfortunately, this is an internal app so we won't be able to share details of the data and code but we should still be able to show you snippets and share our learnings :)
 
 Checkout the repo:
+
 [MotherBox](./MotherBox) (.NetCore/Blazor/GraphQL)
 
 - [GraphQL (HotChocolate)](./MotherBox/GraphQL)
