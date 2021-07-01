@@ -47,7 +47,7 @@ Official doc on how to use [**Azure's built in authentication**](https://docs.mi
 
 **Issues** 
 
-Graphql and EasyAuth: **SPA** (single page applications) require specific header variables when using OAuth2.0 flow. And we do not have a way of accessing how GraphQL submits it's header
+**Graphql and EasyAuth** - **SPA** (single page applications) require specific header variables when using OAuth2.0 flow. And we do not have a way of accessing how GraphQL submits it's header
 
 As we were leveraging the EasyAuth, we ran into an issue with GraphQL not being nice with the EasyAuth.  HotChocolage (and other GraphQL)libraries ([What is HotChocolate](https://chillicream.com/docs/hotchocolate/)?) have an UI application called 'Playground' that can be accessed through an endpoint. Developers can use that to checkout the schema and test out queries. 
 
@@ -59,4 +59,4 @@ Postman and Web Api
 
 > If you have **multifactor** enabled for your account, you MUST use (Authorization Code with PKCE)
 
-
+**UI App registration AND an Api app registration??!** -  
