@@ -1,6 +1,6 @@
 # Authentication Learnings
 
-During our sprint we were tasked to create an app that involved .NET Core Api, Entity Framework, and GraphQL (ChilliCream's HotChocolate)
+During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and GraphQL_ (ChilliCream's HotChocolate)
 
 Because this app dealt with sensitive data Authentication and Authorization were key to making this secure.
 
@@ -11,6 +11,7 @@ First step we tried was adding EasyAuth to our azure resource (web app or functi
 ## EasyAuth 
 
 Description:
+
 Use Azure's built in authentication to authenticate users [link](
 https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#:~:text=Azure%20App%20Service%20provides%20built-in%20authentication%20and%20authorization,and%20mobile%20back%20end%2C%20and%20also%20Azure%20Functions.)
 
@@ -36,9 +37,11 @@ then it'll be used to determine authorization level (allows or disallows certain
 Resource: [Id Token / Access Token Explanation](https://www.youtube.com/watch?v=sICt5aS7wzk)
 
 **Issues**
-- Issues with graphql and EasyAuth (single page application requiring specific header for cross origin)
+
+- Graphql and EasyAuth: SPA (single page applications) require specific header variables when using OAuth2.0 flow. And we do not have a way of accessing how GraphQL submits it's header
 
 **Solution**
+
 Postman and Web Api
 
 > If you have **multifactor** enabled for your account, you MUST use (Authorization Code with PKCE)
