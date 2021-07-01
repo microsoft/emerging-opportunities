@@ -27,8 +27,7 @@ Here's the [official doc](https://docs.microsoft.com/en-us/azure/active-director
     
 ### Set up in Azure Resource
 
-  
-  
+   
 **Authentication / Authorization **
 
 Using JWT token you are able to determine all three. When your api (or any application) receives the JWT token, it can be used to authenticate (allows entry to resources), 
@@ -44,23 +43,4 @@ Postman and Web Api
 
 > If you have **multifactor** enabled for your account, you MUST use (Authorization Code with PKCE)
 
-JWT
-	• Has Access Token (is this valid or not?)
-		○ Yes? All Cool
-		○ No? Next step
-	• Has Refresh Token? (allows app to refresh without forcing user to authenticate again)
-		○ Yes. Allows service to get a new access token
-		○ No? Force users to authenticate again.
-	• V 1.0 (Auth Url 'resource') vs v2.0 (specified tenant id and solely relies on the scope)
-		○ Auth URL is where you login and will give you auth token (ID Token)
-		○ AT will be used to be passed in to retrieve access token
-	• Working path:
-		○ UI (postman… and other) and API rego
-		○ Apprego URI / Scope
-			§ Add scope
-		○ Add that scope to UI rego permission
-		○ Add UI rego id to API rego 
-		○ Error: 
-		WWW-Authenticate: Bearer error="invalid_token", error_description="The signature is invalid"
-		
-![image](https://user-images.githubusercontent.com/78769/124014818-fe128f00-d9b1-11eb-8955-7fca979c81ae.png)
+
