@@ -34,8 +34,7 @@ Resource: [Id Token / Access Token Explanation](https://www.youtube.com/watch?v=
 
 **What is this?** It's leveraging the portal to enable authentication for Functions, Web apps and other resources that has easy auth capability. This way the service that hosts our apps will handle the authentication for us and allow users to access our app. You'll still need to create an app registration for this to work. (_If you don't have an app registration, you can tell the portal to create the app registration for you_)
 
-Official doc on how to use [**Azure's built in authentication**] (
-https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#:~:text=Azure%20App%20Service%20provides%20built-in%20authentication%20and%20authorization,and%20mobile%20back%20end%2C%20and%20also%20Azure%20Functions.)
+Official doc on how to use [**Azure's built in authentication**] (https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#:~:text=Azure%20App%20Service%20provides%20built-in%20authentication%20and%20authorization,and%20mobile%20back%20end%2C%20and%20also%20Azure%20Functions.)
 
 **Issues** 
 
