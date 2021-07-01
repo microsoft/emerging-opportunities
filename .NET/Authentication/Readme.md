@@ -8,14 +8,6 @@ I have followed tutorials here and there in the past but never really had to und
 
 First step we tried was adding EasyAuth to our azure resource (web app or functions)
 
-## EasyAuth 
-
-Description:
-
-Use Azure's built in authentication to authenticate users [link](
-https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#:~:text=Azure%20App%20Service%20provides%20built-in%20authentication%20and%20authorization,and%20mobile%20back%20end%2C%20and%20also%20Azure%20Functions.)
-
-
 ### Application Registration
 
 Application Registration is one of the most fundamental resource you should understand if you want to have any access and authentications enabled for your azure resources. 
@@ -26,9 +18,6 @@ Here's the [official doc](https://docs.microsoft.com/en-us/azure/active-director
 
 > I found this video to also be really helpful More thorough explanation on Azure App Registration [link](https://www.youtube.com/watch?v=YWvl0cIilyA)
     
-### Set up in Azure Resource
-
-   
 **Authentication / Authorization **
 
 Using JWT token you are able to determine all three. When your api (or any application) receives the JWT token, it can be used to authenticate (allows entry to resources), 
@@ -36,11 +25,27 @@ then it'll be used to determine authorization level (allows or disallows certain
 
 Resource: [Id Token / Access Token Explanation](https://www.youtube.com/watch?v=sICt5aS7wzk)
 
-**Issues**
+## Multiple Options 
 
-- Graphql and EasyAuth: SPA (single page applications) require specific header variables when using OAuth2.0 flow. And we do not have a way of accessing how GraphQL submits it's header
+- **EasyAuth**
+- **Code** (handle auth/authorization inside the code)
 
-**Solution**
+### EasyAuth route
+
+**What is this?** It's leveraging the portal to enable authentication for Functions, Web apps and other resources that has easy auth capability. This way the service that hosts our apps will handle the authentication for us and allow users to access our app. You'll still need to create an app registration for this to work. (_If you don't have an app registration, you can tell the portal to create the app registration for you_)
+
+Official doc on how to use [**Azure's built in authentication**] (
+https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization#:~:text=Azure%20App%20Service%20provides%20built-in%20authentication%20and%20authorization,and%20mobile%20back%20end%2C%20and%20also%20Azure%20Functions.)
+
+**Issues** 
+
+Graphql and EasyAuth: **SPA** (single page applications) require specific header variables when using OAuth2.0 flow. And we do not have a way of accessing how GraphQL submits it's header
+
+As we were leveraging the EasyAuth, we ran into an issue with GraphQL not being nice with the EasyAuth.  GraphQL libraries ([What is graphql]? (https://chillicream.com/docs/hotchocolate/)) have an UI application called 'Playground' that can be accessed through an endpoint. Developers can use that to checkout the schema and test out queries. 
+
+EasyAuth uses OAuth2.0 (OpenID) to authenticate users. Since Playground is a spa, you'd need to send certain values in the request header to by pass CORS error. However, since graphql is making a request on behalf of us, we had no way of manipulating the header request to make our oauth2 workflow work. [Reference on spa and oauth2 flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#redirect-uri-setup-required-for-single-page-apps)
+
+### Code route 
 
 Postman and Web Api
 
