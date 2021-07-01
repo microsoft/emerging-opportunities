@@ -19,7 +19,7 @@ Here's the [**official doc**](https://docs.microsoft.com/en-us/azure/active-dire
 > I found this [**video**](https://www.youtube.com/watch?v=YWvl0cIilyA) to also be really helpful More thorough explanation on Azure App Registration
  
  
-**Authentication / Authorization**
+### Authentication / Authorization
 
 Using JWT token you are able to determine all three. When your api (or any application) receives the JWT token, it can be used to authenticate (allows entry to resources), 
 then it'll be used to determine authorization level (allows or disallows certain access level on the resources). It will also have information on how long this token lasts.
