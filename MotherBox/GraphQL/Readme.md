@@ -9,7 +9,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 1. [Getting started with GraphQL on ASP.NET Core and Hot Chocolate - Workshop](https://github.com/ChilliCream/graphql-workshop)
 2. [GraphQL API with .NET 5 and Hot Chocolate](https://youtu.be/HuN94qNwQmM)
 
-## Components that make up QraphQL:
+## Components that make up GraphQL:
 
 1. Schema and Types
    1. `Query` - Query root type is used for query opperations.
