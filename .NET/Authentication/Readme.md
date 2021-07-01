@@ -21,8 +21,14 @@ Here's the [**official doc**](https://docs.microsoft.com/en-us/azure/active-dire
  
 ### Authentication / Authorization
 
-Using JWT token you are able to determine all three. When your api (or any application) receives the JWT token, it can be used to authenticate (allows entry to resources), 
-then it'll be used to determine authorization level (allows or disallows certain access level on the resources). It will also have information on how long this token lasts.
+In layman's term:
+
+- **Authentication** (ID Token) - Used to give entry to a resource based on the credentials users provide. (There are of course times when an app will authenticate, like a daemon.)
+
+- **Authorization** (Access Token) - Used to determine what access level a user/ an app has.
+
+
+AAD uses JWT token to authenticate and authorize users. When your api (or any application) receives the JWT token, it can be used to authenticate (allows entry to resources), then it'll be used to determine authorization level (allows or disallows certain access level on the resources). It will also have information on how long this token lasts.
 
 Resource: 
 
