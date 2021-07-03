@@ -40,6 +40,6 @@ Interested in the tech side of things?
 
 [.NET Authentication with HotChocolate](../.NET/Authentication)
 
-[Azure Data Factory setup](./ADF)
+[Azure Data Factory setup](./Data)
 
 [Using Banana Cake Pop](./Banana%20Cake%20Pop/Readme.md)
