@@ -38,7 +38,7 @@ Interested in the tech side of things?
 
 [GraphQL Learnings and snippets](./GraphQL)
 
-[.NET Authentication with HotChocolate](./.NET)
+[.NET Authentication with HotChocolate](../.NET/Authentication)
 
 [Azure Data Factory setup](./ADF)
 
