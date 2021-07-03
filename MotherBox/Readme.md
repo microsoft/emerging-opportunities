@@ -15,7 +15,7 @@ PowerBI reports in MotherBox Workspace:
 - AIP Weekly
 - AIP Monthly
 
-###Notifications
+### Notifications
 The goal for notifications is to alert CSAs of unexpected spikes (or troughs) in Azure usage units as soon as data is available in AIP ADX. Alerts could be provided in multiple ways.
 - **PowerBI:** Power detailed reports are aggregated to Daily, Weekly, Monthly and Yearly, focus is for detailed analysis. Measures showing Week Over Week, Month Over Month and Year Over Year. Filtered to remove units that are very minor to avoid noise.
 - **Email:** Email notifications to alert the specific CSA assigned to specific Account, on any spikes and dips. The goal is to have this notification before the change shows in Azure Portal. CSA to Account assignment will happen in an Applicaton that is not covered in this document but in another in the same Repo.
