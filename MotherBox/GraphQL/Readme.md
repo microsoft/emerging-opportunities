@@ -23,7 +23,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
     1. Register root types and extended types need to be added using: .AddQueryType<QueryType>();
 
 3. Authentication/Authoration
-    1. [.NET Authentication with HotChocolate](../.NET)
+    1. [.NET Authentication with HotChocolate](https://github.com/microsoft/emerging-opportunities/tree/main/.NET/Authentication)
   
 ## Sample Query/Mutations:
   
