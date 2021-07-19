@@ -2,7 +2,7 @@
 
 [Checkout out our up to date backlog](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics)
 
-## Current Project (Sprint 26)
+## Current Project (Sprint 26 - Sprint 27)
 
 **MotherBox** application
 
