@@ -2,6 +2,8 @@
 
 During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and GraphQL_ (ChilliCream's HotChocolate)
 
+> [**Check out our Blazor/GraphQL starter kit!**](https://github.com/microsoft/blazor-graphql-starter-kit) leveraging these learnings.
+
 Because this app dealt with sensitive data Authentication and Authorization were key to making this secure.
 
 I have followed tutorials here and there in the past but never really had to understand as deep as I need to now. 
