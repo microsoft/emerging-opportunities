@@ -76,13 +76,13 @@ services.AddMicrosoftIdentityWebApiAuthentication(Configuration, "Your-Setting-S
   }
 ```
 
-Postman (or any UI app) and Web Api
+**Postman (or any UI app) and Web Api**
 
 > If you have **multifactor** enabled for your account, you MUST use (Authorization Code with PKCE)
 
 Follow this tutorial and you should be almost golden! 
 
-[How to create UI and API app registration and use Postman to get JWT token!](https://www.josephguadagno.net/2020/06/12/protecting-an-asp-net-core-api-with-microsoft-identity-platform)
+[**How to create UI and API app registration and use Postman to get JWT token!**](https://www.josephguadagno.net/2020/06/12/protecting-an-asp-net-core-api-with-microsoft-identity-platform)
 
 
-**Hope this learning helps you!**
+## Hope this learning helps you in your development!
