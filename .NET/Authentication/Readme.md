@@ -1,8 +1,6 @@
 # Authentication Learnings
 
-During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and GraphQL_ (ChilliCream's HotChocolate)
-
-- [What is GraphQL?](https://github.com/microsoft/emerging-opportunities/blob/main/MotherBox/GraphQL/Readme.md)
+During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and [GraphQL](https://github.com/microsoft/emerging-opportunities/blob/main/MotherBox/GraphQL/Readme.md)_ 
 
 > [**Check out our Blazor/GraphQL starter kit!**](https://github.com/microsoft/blazor-graphql-starter-kit) leveraging these learnings.
 
