@@ -25,18 +25,85 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 3. Authentication/Authoration
     1. [.NET Authentication with HotChocolate](https://github.com/microsoft/emerging-opportunities/tree/main/.NET/Authentication)
   
-## Sample Query/Mutations:
+## Sample Query:
   
-  ```GraphQL
-  query{
-    applications(first:30){
-      nodes{
-        applicationId
-        applicationName
-        businessPurpose
-        applicationArtifacts{uRI}, 
-        iterations{iterationName}
-      }
+Sample query that will return the first record (using Paging) and also data from 2 related tables (using Projection).
+
+Optional attributes that can be added to the definition:  [UsePaging()], [UseProjection()], [UseFiltering()] 
+
+```GraphQL
+query{
+ applications(first:1){
+   nodes{
+     applicationId
+     applicationName
+     businessPurpose
+     applicationArtifacts{uRI}, 
+     iterations{iterationName}
+   }
+ }
+}
+```
+   
+Running the query in Banana Cake Pop returns:
+```GraphQL
+{
+  "data": {
+    "applications": {
+      "nodes": [
+        {
+          "applicationId": 1,
+          "applicationName": "Sample Application",
+          "businessPurpose": "Support the sales department.",
+          "applicationArtifacts": [],
+          "iterations": [
+            {
+              "iterationName": "VM Batch 1 Migration"
+            },
+            {
+              "iterationName": "VM Batch 2 Migration"
+            }
+          ]
+        }
+      ]
     }
   }
-  ```
+}
+```
+
+## Mutations
+ 
+Mutations are the equivalent to POST, PUT, PATCH and DELETE in HTTP/REST speak.  We'll use a mutations to create a new Application Artifact and return the new Artifact Id and description.
+   
+```GraphQL
+mutation{
+  addApplicationArtifact(
+    description:"sample artifact"
+    uRI:"http://localhost"
+    applicationId:1)
+    {
+       applicationArtifactId
+       description
+    }
+}   
+```
+  
+Running the mutations returns the following:
+   
+```GraphQL
+{
+  "data": {
+    "addApplicationArtifact": {
+      "applicationArtifactId": 2,
+      "description": "sample artifact"
+    }
+  }
+}
+```
+
+## Variables
+   
+Variables can be used in place of hard coded values.  This is usefull in simulating an HTTP query string or request body.
+
+![Sample Variables in Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/blob/main/MotherBox/GraphQL/Variables.png)
+
