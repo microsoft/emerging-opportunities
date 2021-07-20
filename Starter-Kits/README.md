@@ -1,13 +1,8 @@
-# Starter-Kit News
+# Hackathon Starter-Kit
 
-Link to resource: [Click Here](https://github.com/microsoft/hackathon-starter-kit)
+Link to our starter kit repo: 
+[**Click Here**](https://github.com/microsoft/hackathon-starter-kit)
 
-## Current Work
-What's happening
+## On Going
 
-## Past Sprints
-> Sprint 23
-What happened in sprint 23
-
-## How do you get involved?
-(link to ms form)
+As we host and plan hackathons we are updating the repo constantly to share our learnings
