@@ -1,38 +1,29 @@
 # MotherBox Project
-MotherBox is a project name created to alert CSAs of unexpected spikes (or troughs) in Azure usage units as soon as available in source Azure Intelligence Platform (AIP). Data is delayed by at least a week in AIP Azure Data Explorer. The PowerBI link below shows data load status.
+MotherBox is a project name created to alert CSAs to unexpected spikes (or troughs) in a customer's Azure usage.
 
-## MotherBox Data Analytics
-Create insights into customer usage and telemetry data from AIP, based on usage trends, geography and patterns in data, at customer, subscription, resource group, service type and resource level.
-
-**Azure Usage Data** is collected from various systems into Azure SQL Datawarehouse then into Azure Data Explorer for analysis. This is managed by AIP team. The data source for this MotherBox project is Azure Data Explorer.
+**Azure Usage Data** is collected from various systems into an Azure SQL Datawarehouse then into Azure Data Explorer for analysis. The data source for this MotherBox project is Azure Data Explorer.
 
 ### Data Flow
-Azure Data Explorer (AIP) --> Azure Data Factory (MotherBoxADF) --> Azure HyperScale SQL DB (MotherBoxSQLDB) --> PowerBI (AIP Daily/Weekly/Monthly/Yearly)
+Azure Data Explorer --> Azure Data Factory --> Azure HyperScale SQL DB --> PowerBI
 
 ### PowerBI
-PowerBI reports in MotherBox Workspace:
-- AIP Daily
-- AIP Weekly
-- AIP Monthly
+PowerBI reports in our MotherBox workspace:
+- Daily trends
+- Weekly trends
+- Monthly trends
 
 ### Notifications
-The goal for notifications is to alert CSAs of unexpected spikes (or troughs) in Azure usage units as soon as data is available in AIP ADX. Alerts could be provided in multiple ways.
-- **PowerBI:** Power detailed reports are aggregated to Daily, Weekly, Monthly and Yearly, focus is for detailed analysis. Measures showing Week Over Week, Month Over Month and Year Over Year. Filtered to remove units that are very minor to avoid noise.
-- **Email:** Email notifications to alert the specific CSA assigned to specific Account, on any spikes and dips. The goal is to have this notification before the change shows in Azure Portal. CSA to Account assignment will happen in an Applicaton that is not covered in this document but in another in the same Repo.
+The goal for notifications is to alert our customer success team of unexpected spikes (or troughs) in Azure usage units as soon as data is available in AIP ADX. Alerts could be provided in multiple ways.
+- **PowerBI:** Power BI detailed reports are aggregated to Daily, Weekly, Monthly and Yearly, focus is for detailed analysis. Measures showing Week Over Week, Month Over Month and Year Over Year. Filtered to remove units that are very minor to avoid noise.
+- **Email:** Email notifications to alert the specific CSA assigned to specific Account, on any spikes and dips. Most of this detail is available to customers, but it can be challenging for some customers to pay attention and react to this data - especially if they are new to the cloud (or still trying to make the cloud work like their on-prem data center culture).
 
-## MotherBox API **Stack**: 
-
+## MotherBox technologies: 
 - Front end: Blazor
-- Backend: .NET core api / GraphQL
+- Backend: .NET Core API / GraphQL
 
-### Description
-Internal app for sellers and sales engineers. Once the app is consented by the customers, app will help customers create logical groupings of their resources (beyond resource groups)
-
-Ideas include:
-
-- **Applications**: logical groupings of resources/resource groups 
-- **Iterations**:
-
+Concepts include:
+- **Applications**: logical groupings of resources/resource groups as defined by the customer
+- **Iterations**: The time-based aspect of notable events in the lifecycle of an application. (e.g. initial site migration to Azure, expanding into Asia, adding bot assistant, and even planned app decommission)
 
 Interested in the tech side of things?
 
