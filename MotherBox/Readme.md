@@ -1,5 +1,5 @@
 # MotherBox Project
-MotherBox is a project name created to alert CSAs to unexpected spikes (or troughs) in a customer's Azure usage.
+MotherBox is a project name created to alert our soulutions architects to unexpected spikes (or troughs) in a customer's Azure usage.
 
 **Azure Usage Data** is collected from various systems into an Azure SQL Datawarehouse then into Azure Data Explorer for analysis. The data source for this MotherBox project is Azure Data Explorer.
 
@@ -13,9 +13,10 @@ PowerBI reports in our MotherBox workspace:
 - Monthly trends
 
 ### Notifications
-The goal for notifications is to alert our customer success team of unexpected spikes (or troughs) in Azure usage units as soon as data is available in AIP ADX. Alerts could be provided in multiple ways.
+The goal for notifications is to alert our customer success team of unexpected spikes (or troughs) in Azure usage units as soon as data is available in our internal data systems . Alerts could be provided in multiple ways.
+
 - **PowerBI:** Power BI detailed reports are aggregated to Daily, Weekly, Monthly and Yearly, focus is for detailed analysis. Measures showing Week Over Week, Month Over Month and Year Over Year. Filtered to remove units that are very minor to avoid noise.
-- **Email:** Email notifications to alert the specific CSA assigned to specific Account, on any spikes and dips. Most of this detail is available to customers, but it can be challenging for some customers to pay attention and react to this data - especially if they are new to the cloud (or still trying to make the cloud work like their on-prem data center culture).
+- **Email:** Email notifications to alert the specific solutions architects assigned to specific Account, on any spikes and dips. Most of this detail is available to customers, but it can be challenging for some customers to pay attention and react to this data - especially if they are new to the cloud (or still trying to make the cloud work like their on-prem data center culture).
 
 ## MotherBox technologies: 
 - Front end: Blazor
