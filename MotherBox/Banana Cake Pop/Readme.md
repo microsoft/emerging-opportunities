@@ -2,7 +2,7 @@
 
 ## What is Banana Cake Pop?
 
-Banana Cake Pop is a GraphQL IDE to explore schemas, execute operations which works well with Hot Chocolate and any other GraphQL server. Banana Cake Pop is based on Monaco and handles large schemas with ease.
+Banana Cake Pop is a GraphQL IDE to explore schemas, execute operations which works well with Hot Chocolate and any other [GraphQL](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/GraphQL) server. Banana Cake Pop is based on Monaco and handles large schemas with ease.
 
 ![History](https://user-images.githubusercontent.com/69863736/126261239-af19bcf0-94e8-4713-a77b-d07104b4b6a2.png)
 Two main columns show you the query you’re currently running and the results of your query.
