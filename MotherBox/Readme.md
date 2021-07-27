@@ -1,7 +1,7 @@
 # MotherBox Project
 MotherBox is a project name created to alert our soulutions architects to unexpected spikes (or troughs) in a customer's Azure usage.
 
-> We've created a [starter kit](https://github.com/microsoft/blazor-graphql-starter-kit) for you to try building your own Blazor/GraphQL application! 
+> Go Check Out Our [Starter-Kit](https://github.com/microsoft/blazor-graphql-starter-kit) for you to try building your own Blazor/GraphQL application! 
 
 **Azure Usage Data** is collected from various systems into an Azure SQL Datawarehouse then into Azure Data Explorer for analysis. The data source for this MotherBox project is Azure Data Explorer.
 
