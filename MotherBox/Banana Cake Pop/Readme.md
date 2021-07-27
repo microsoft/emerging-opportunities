@@ -24,3 +24,8 @@ It keeps a running history of your queries.
 You can explore the schema, filter and drill down into aspects of your schema. It’s interactive, you can view it in multiple columns.
 ![Schema](https://user-images.githubusercontent.com/69863736/126260653-0ef44844-734c-4ea7-9f0c-f19646b2fec7.png)
 For example, the **Iteration** type to the left shows the fields that make up the type. Each **Iteration** has a field **Iteration Name**, which is an array of the *String* type. If you click on a field, you can expand even further to get more type details.
+
+
+Reference:
+
+- [GraphQL](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/GraphQL)
