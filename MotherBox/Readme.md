@@ -1,5 +1,4 @@
 # MotherBox Project
-[![Build Status](https://dev.azure.com/HLSHack/CSU%20Backlog/_apis/build/status/MotherBoxAPI?branchName=main)](https://dev.azure.com/HLSHack/CSU%20Backlog/_build/latest?definitionId=2&branchName=main)
 MotherBox is a project name created to alert our soulutions architects to unexpected spikes (or troughs) in a customer's Azure usage.
 
 > Go Check Out Our [Starter-Kit](https://github.com/microsoft/blazor-graphql-starter-kit) for you to try building your own Blazor/GraphQL application! 
