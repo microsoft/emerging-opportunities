@@ -27,7 +27,7 @@ I use a refresh/load button to initiate the call to the Office 365 Users connect
 6. **Set the button's OnSelect formula.** 
 
 ```
-ClearCollect(varOrg, Office365Users.DirectReportsV2("mymanager@microsoft.com")`
+ClearCollect(varOrg, Office365Users.DirectReportsV2("mymanager@microsoft.com")
 ```
 
 When the button is clicked, this formula creates a variable called varOrg. It then retrieves the direct reports for the specified email address from the Microsoft Graph and assigns the results of that API call to the variable.
@@ -39,7 +39,7 @@ From the **Insert** menu, select **Gallery** and then **Blank vertical**. Positi
 6. **Set the gallery's Items formula.**
 
 ```
-varOrg`
+varOrg
 ```
 
 This is pretty simple. We are just binding the results of our Graph API call to the gallery.
@@ -52,9 +52,10 @@ With the item template of the gallery control selected, from the **Insert** menu
 
 ```
 If(!IsBlank(ThisItem.upn), 
-    Office365Users.UserPhotoV2(ThisItem.upn)
+    Office365Users.UserPhotoV2(ThisItem.userPrincipalName)
 )
 ```
+I again call the Microsoft Graph to get each users photo based on their upn (userPrincipalName). There shouldn't be any blank upns, but for whatever reason, I get a couple of these in my organization.
 
 8. **Run the app!**
 
@@ -65,7 +66,7 @@ All of the above will get you to a working app, but if your organization is 800+
 
 1. **Fetch organization hierarchy.**
 
-I first thought about doing this in Power Automate, but my Flow timed out due to organization size. :( So, I went back to Power Apps and set my button's OnSelect formula to the following.
+I first thought about doing this in Power Automate, but my Flow always timed out due to my organization's size. If your organization is smaller, I still think this could be the better way to go as I think it'd be easier to troubleshoot and add more functionality to at a later date. Instead, I went back to Power Apps and set my button's OnSelect formula to the following.
 
 ```
 Clear(varLevel1Directs);
@@ -73,9 +74,9 @@ Clear(varLevel2Directs);
 Clear(varLevel3Directs);
 Clear(varLevel4Directs);
 
-ClearCollect(varPattysDirects, 
+ClearCollect(varTopDirects, 
     RenameColumns(Distinct(Office365Users.DirectReportsV2("mymanager@microsoft.com", {'$select': "userPrincipalName"}).value, userPrincipalName), "Result", "upn0"));
-ForAll(varPattysDirects, 
+ForAll(varTopDirects, 
     Collect(varLevel1Directs, 
         RenameColumns(Distinct(Office365Users.DirectReportsV2(upn0, {'$select': "userPrincipalName"}).value, userPrincipalName), "Result", "upn1"));
 );
@@ -92,19 +93,49 @@ ForAll(varLevel3Directs,
         RenameColumns(Distinct(Office365Users.DirectReportsV2(upn3, {'$select': "userPrincipalName"}).value, userPrincipalName), "Result", "upn4"));
 );
     
-ClearCollect(varEou, RenameColumns(varPattysDirects, "upn0", "upn"));
-Collect(varEou, RenameColumns(varLevel1Directs, "upn1", "upn"));
-Collect(varEou, RenameColumns(varLevel2Directs, "upn2", "upn"));
-Collect(varEou, RenameColumns(varLevel3Directs, "upn3", "upn"));
-Collect(varEou, RenameColumns(varLevel4Directs, "upn4", "upn"));
+ClearCollect(varOrg, RenameColumns(varTopDirects, "upn0", "userPrincipalName"));
+Collect(varOrg, RenameColumns(varLevel1Directs, "upn1", "userPrincipalName"));
+Collect(varOrg, RenameColumns(varLevel2Directs, "upn2", "userPrincipalName"));
+Collect(varOrg, RenameColumns(varLevel3Directs, "upn3", "userPrincipalName"));
+Collect(varOrg, RenameColumns(varLevel4Directs, "upn4", "userPrincipalName"));
 
-RemoveIf(varEou, Office365Users.UserPhotoMetadata(upn).HasPhoto = false);
+RemoveIf(varOrg, Office365Users.UserPhotoMetadata(userPrincipalName).HasPhoto = false);
 ```
+Yeah, that looks like a lot, but it's not that bad.
+- I first create and clear the variables representing the four levels of directs under the top level directs. (Ok, that sentence is a little confusing.) 
+- I then create and clear a collection called `varTopDirects`. 
+- Working from the innermost parentheses...
+    - I call the Graph API with the topmost manager's email. I also added the optional `$select` parameter to only return the `userPrincipalName` as I only need each person's email address for the rest of the code to work and this makes for much smaller API responses.
+    - I then ensure I have a distinct list of direct reports based on the userPrincipalName. This should be unneccessary in most organizations, but it's not in mine. Sheesh!
+    - I then drop all of those into the `varTopDirects` collection, but I first rename the generic **Result** column to **upn0**. I really just used this for troubleshooting so I could look at each collection before and after mergingthem together.
+- I then use `ForAll` to iterate through each of those rows in the collection and call the Graph API for each to get their direct reports.
+- I then repeat for four more levels of direct reports. You could add or remove levels as needed.
+- I merge all of these collections together back into `varOrg`. I first have to rename columns back to a singular column name like **userPrincipalName**. This is the collection already bound to our gallery control.
+- Finally, I use `RemoveIf` to iterate through `varOrg` to remove any user's that don't have a photo.
 
 2. **Wrap images**
 
-A gallery control allows you to display it's items vertically or horizontally - or both! Select your gallery control and, in the right pane, change the **Wrap Count** to 10.
+A gallery control allows you to display it's items vertically or horizontally - or both? Select your gallery control and, in the right pane, change the **Wrap Count** to `10`.
 
 3. **Display even more images!**
 
+While you can set the **Wrap Count** property to any integer, it will always only wrap 10 items across. To show the 800+ people in my organization, I reduced my gallery's width by four and made four copies of the gallery control that I set next to each other left-to-right. To get a quarter of all of my images to show up in each gallery, I used the following code:
 
+Gallery1's Items formula:
+```
+FirstN(Sort(varOrg, userPrincipalName), CountA(varOrg.userPrincipalName) / 4)
+```
+Gallery2's Items formula:
+```
+LastN(FirstN(Sort(varOrg, userPrincipalName), CountA(varOrg.userPrincipalName) / 2), CountA(varOrg.userPrincipalName) / 4)
+```
+Gallery3's Items formula:
+```
+FirstN(LastN(Sort(varOrg, userPrincipalName), CountA(varOrg.userPrincipalName) / 2), CountA(varOrg.userPrincipalName) / 4)
+```
+Gallery4's Items formula:
+```
+LastN(Sort(varOrg, userPrincipalName), CountA(varOrg.userPrincipalName) / 4)
+```
+
+And that should be all you need to do! If you think of other ways to make this code more efficient, I'm all ears!
