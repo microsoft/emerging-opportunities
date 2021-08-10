@@ -9,6 +9,9 @@ It's a human readable health record that allows accessibility and interoperabili
 
 ## Projects
 
+### FHIRBlaze
+[Click here for more details!](./FHIRBlaze)
+
 ### FHIRPower 
 [Click for more details](./FHIRPower)
 
