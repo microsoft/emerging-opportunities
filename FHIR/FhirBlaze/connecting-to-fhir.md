@@ -29,27 +29,27 @@ NuGet Packages Required:
 The advantage of this approach is that you're only using 1st party code (the dotnet core, MSAL, and HTTP libraries).
 1. Setup MSAL.
 With this code your app can now authenticate against Azure Active Directory. 
-```dotnet
-Program.cs
-
- builder.Services.AddMsalAuthentication(options =>
-  {
-	  builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
-      options.ProviderOptions.DefaultAccessTokenScopes.Add(fhir.Scope);
-  });
+```csharp
+builder.Services.AddMsalAuthentication(options =>
+{
+  builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
+  options.ProviderOptions.DefaultAccessTokenScopes.Add(fhir.Scope);
+});
 ```
 2. Create an HTTP Client with a HTTP Message Handler.
 The HTTP Message handler will intercept requests and fetch a token with the required scope when the authorized url are called.
-```dotnet
- builder.Services.AddHttpClient<IFHIRBlazeServices, FHIRBlazeServices>
-    (s =>
-        s.BaseAddress = new Uri(fhir.FhirServerUri))
-        	.AddHttpMessageHandler(sp => sp.GetRequiredService<AuthorizationMessageHandler>()
-        		.ConfigureHandler(
-                	authorizedUrls: new[] { fhir.FhirServerUri },
-                	scopes: new[] { fhir.Scope }));
-
+```csharp
+builder.Services.AddHttpClient<IFHIRBlazeServices, FHIRBlazeServices>
+  (s =>
+    s.BaseAddress = new Uri(fhir.FhirServerUri))
+    	.AddHttpMessageHandler(sp => sp.GetRequiredService<AuthorizationMessageHandler>()
+   		.ConfigureHandler(
+           	authorizedUrls: new[] { fhir.FhirServerUri },
+           	scopes: new[] { fhir.Scope }
+      )
+  );
 ```
+
 3. That's it!  Now you can make any FHIR REST call without having to worry about authorization.
 [Example in FHIRBlaze](https://github.com/microsoft/FhirBlaze/blob/c6fe1acae9d148355c898187874c01181f36bad3/FhirBlaze/Program.cs#L35)
 
