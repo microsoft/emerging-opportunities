@@ -21,12 +21,15 @@ We have included the following patterns to connect to a FHIR API.
 * [Firely .NET SDK](#firely-net-sdk)
 * [FHIR.js](FHIR.js)
 
+
+
+## HTTP Client
+This approach only uses 1st party packages.   It is also a good starter.  
+
 NuGet Packages Required:
 * Microsoft.Authentication.WebAssembly.MSAL
 * Microsoft.Extensions.Http  
 
-## HTTP Client
-The advantage of this approach is that you're only using 1st party code (the dotnet core, MSAL, and HTTP libraries).
 1. Setup MSAL.
 With this code your app can now authenticate against Azure Active Directory. 
 ```csharp
