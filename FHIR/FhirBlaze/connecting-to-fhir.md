@@ -111,9 +111,53 @@ To streamline and consolidate your startup code, you can move the above steps to
 * [FhirServiceExtensions.cs](https://github.com/microsoft/FhirBlaze/blob/main/FhirBlaze/FhirServiceExtensions.cs)
 
 ## Fhir.js
-1. Setup AddMsalAuthentication
-2. Setup fhir Client
-Sample code at [FHIR-React](TODO)
+FHIR.js is a javascript library for FHIR that supports:
+* Support FHIR CRUD operations
+* Friendly and expressive query syntax
+[Read the docs](https://github.com/FHIR/fhir.js/) for more information on implementing.
+[Read this doc](https://github.com/Azure-Samples/ms-identity-javascript-tutorial) for further information on setting up MSAL on javascript.
+
+### Configuring FHIR.js
+1. Setup MSAL
+```JavaScript
+let msalConfig = {
+      auth: {
+        clientId: 'b3544b0c-1209-4fe8-b799-8f63a0179fa0',        
+        authority: "https://login.microsoftonline.com/common",
+      }
+    };
+    let msalI = new Msal.UserAgentApplication(msalConfig);
+    if (msalInstance.getAccount()) {   
+      //user signed in; get token
+      msalInstance.acquireTokenSilent(loginRequest)
+        .then((response)=>{
+          token=response.accessToken)
+        });
+    }else{
+      let loginRequest = {
+         scopes: ["api://fhir.Scope"] 
+      };    
+      msalInstance.loginRedirect(loginRequest));     
+    }
+
+```
+2. Chose an adapter
+Setup a ```var adapter```.
+This [native adapter is a good candidate.](https://github.com/FHIR/fhir.js/blob/master/src/adapters/native.js)
+
+3. Setup fhir Client
+```JavaScript
+var config = {
+  // FHIR server base url
+  baseUrl: 'http://myfhirserver.com',
+  auth: {
+     bearer: token //from msal above
+  }
+};
+
+myClient = fhir(config, adapter)
+```
+
 
 # What's Next
 Now you should explore FHIR more and make your own app!
