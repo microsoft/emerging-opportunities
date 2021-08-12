@@ -2,7 +2,28 @@
 
 [Checkout out our up to date backlog](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics)
 
+
+
 ## Current Project (Sprint 26 - Sprint 27)
+
+[FHIRBlaze](./FHIR/FhirBlaze)
+
+>> Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
+
+
+## Previous Projects
+
+Click the links below to see details of each of the projects:
+
+[FHIR](./FHIR)
+- [FHIRPower](./FHIR/FHIRPower)
+
+[Verifiable Credentials](./Verifiable-Credentials)
+
+
+## Past Sprints 
+
+### Sprint 26-27
 
 **MotherBox** application
 
@@ -16,19 +37,7 @@ Checkout the repo:
 - [.NET](./MotherBox/.NET)
 - [Azure Data Factory](./MotherBox/ADF)
 
-## Ongoing Projects
-
-Click the links below to see details of each of the projects:
-
-[FHIR](./FHIR)
-- [FHIRPower](./FHIR/FHIRPower)
-
-[Verifiable Credentials](./Verifiable-Credentials)
-
-
-## Past Sprints 
-
-Sprint 25
+### Sprint 25
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 - Our team is assisting [MJH Life Sciences](https://www.mjhlifesciences.com/) as coaches and mentors.
 
