@@ -9,6 +9,8 @@ This project delivered the following services:
 2. Patient Experience app - This app provides Patients to fill out view and respond to the questionnaires on their mobile device.
 3. Clinician Questionnaire Report - This report provides analysis on questionnaire responses via a PowerBI dashboard embeded in the Clinician In-patient app.
 
+[FhirBlaze link](https://github.com/microsoft/FhirBlaze) contains all the above services if you wish to download and customize for your organization.
+
 ## What we learned
 1. [How to connect to fhir](connecting-to-fhir.md)
 2.
