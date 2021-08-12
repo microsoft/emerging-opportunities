@@ -13,10 +13,10 @@ This project delivered the following services:
 
 ## References
 * [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) 
-* [HL7 FHIR](https://hl7.org/fhir/) FHIR is a standard for health care data exchange, published by HL7®.
+* [HL7 FHIR](https://hl7.org/fhir/)
 * [Microsoft Cloud for Healthcare](https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare)
 * [Microsoft Health Architecture GitHub](https://github.com/microsoft/health-architectures)
 * [Microsoft FHIR Server Samples](https://github.com/microsoft/fhir-server-samples)
-* [PowerBI](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview)
+* [Power BI](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview)
 
 
