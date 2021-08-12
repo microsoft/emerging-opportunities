@@ -38,7 +38,7 @@ public Patient ToHl7Patient()
 }
 ```
 
-This worked well overall although we did run into a few bugs with our mapping code that resulted in some intresting errors from our Fhir client.
+This worked well overall although we did run into a few bugs with our mapping code that resulted in some interesting errors from our Fhir client.
 
 Mapping to/from the Hl7.Fhir.Model.Patient should have been relatively straight forward. However the complex/nested structure of the model makes it tricky to work with. Looking at the Patient resource documentation, you notice that the patient name is a nested object of type of HumanName.
 
