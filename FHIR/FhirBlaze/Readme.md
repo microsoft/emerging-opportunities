@@ -9,7 +9,10 @@ This project delivered the following services:
 2. Patient Experience app - This app provides Patients to fill out view and respond to the questionnaires on their mobile device.
 3. Clinician Questionnaire Report - This report provides analysis on questionnaire responses via a PowerBI dashboard embeded in the Clinician In-patient app.
 
-
+## What we learned
+1. [How to connect to fhir](connecting-to-fhir.md)
+2.
+3. [Our Impressions of Microfrontends](impressions-of-microfrontends.md)
 
 ## References
 * [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) 
