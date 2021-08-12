@@ -13,7 +13,7 @@ This project delivered the following services:
 
 ## What we learned
 1. [How to connect to fhir](connecting-to-fhir.md)
-2.
+2. [Working with FHIR Patient](working-with-fhir-patient.md)
 3. [Our Impressions of Microfrontends](impressions-of-microfrontends.md)
 
 ## References
