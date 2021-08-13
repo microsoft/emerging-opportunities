@@ -10,10 +10,12 @@ It's a human readable health record that allows accessibility and interoperabili
 ## Projects / Hackathon
 
 [**FHIRBlaze**](./FhirBlaze)
+- Blazor WASM application leveraging FHIR
 
 [**FHIRPower**](./FHIRPower)
-- Application leveraging custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR to interact with records stored in FHIR
+- PowerApp with custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR
 
 [**OpenHack: FHIR**](https://github.com/microsoft/OpenHack-FHIR) 
+- Two day internal hackathon around FHIR use cases (ADF, Azure API for Fhir, PowerBi, IoT)
 
 
