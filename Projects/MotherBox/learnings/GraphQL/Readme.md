@@ -9,7 +9,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 1. [Hot Chocolate v11 Documenation](https://chillicream.com/docs/hotchocolate)
 2. [Getting started with GraphQL on ASP.NET Core and Hot Chocolate - Workshop](https://github.com/ChilliCream/graphql-workshop)
 3. [GraphQL API with .NET 5 and Hot Chocolate](https://youtu.be/HuN94qNwQmM)
-4. [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/Banana%20Cake%20Pop)
+4. [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/Banana%20Cake%20Pop)
 5. [Blazor GraphQL Starter Kit](https://github.com/microsoft/blazor-graphql-starter-kit)
 
 ## Components that make up GraphQL:
@@ -25,7 +25,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
     1. Register root types and extended types need to be added using: .AddQueryType<QueryType>();
 
 3. Authentication/Authoration
-    1. [.NET Authentication with HotChocolate](https://github.com/microsoft/emerging-opportunities/tree/main/.NET/Authentication)
+    1. [.NET Authentication with HotChocolate](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/.NET/Authentication)
   
 ## Sample Query:
   
@@ -47,7 +47,7 @@ query{
 }
 ```
    
-Running the query in [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/Banana%20Cake%20Pop) returns:
+Running the query in [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/Banana%20Cake%20Pop) returns:
 ```GraphQL
 {
   "data": {
@@ -107,7 +107,7 @@ Running the mutations returns the following:
    
 Variables can be used in place of hard coded values.  This is usefull in simulating an HTTP query string or request body.
 
-Sample Variables in [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/Banana%20Cake%20Pop)
+Sample Variables in [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/Banana%20Cake%20Pop)
    
-![Sample Variables in Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/blob/main/MotherBox/GraphQL/Variables.png)
+![Sample Variables in Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/blob/main/Projects/MotherBox/learnings/GraphQL/Variables.png)
 

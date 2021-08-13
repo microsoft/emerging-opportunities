@@ -4,29 +4,29 @@
 
 ## Table of Content
 
-[**FHIRBlaze**](./FHIR/FhirBlaze) (current sprint) 
+[**FHIRBlaze**](Projects/FHIR/FHIRBlaze) (Blazor/Azure Fhir API) 
 > Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
 
-[**MotherBox**](./MotherBox) (.NetCore/Blazor/GraphQL) 
+[**MotherBox**](Projects/MotherBox) (.NetCore/Blazor/GraphQL) 
 > Unfortunately, this is an internal app so we won't be able to share details of the data and code but we should still be able to show you snippets and share our learnings :)
-- [GraphQL (HotChocolate)](./MotherBox/GraphQL)
-- [.NET](./MotherBox/.NET)
-- [Azure Data Factory](./MotherBox/ADF)
+- [GraphQL (HotChocolate)](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/GraphQL)
+- [Authentication](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/.NET/Authentication)
+- [Azure Data Factory](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/ADF)
 
 
 ### Past Sprints
 
-[**FHIRPower**](./FHIR/FHIRPower)
+[**FHIRPower**](Projects/FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
 
-[**Verifiable Credentials**](./Verifiable-Credentials)
+[**Verifiable Credentials**](Projects/Verifiable-Credentials)
 
 ### Hackathons
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 
-[**Genomics**](./Genomics)
+[**Genomics**](Projects/Genomics)
 
-[**NurseHack4Health**](./NurseHack4Health)
-- [Reusable Components (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
+[**NurseHack4Health**](Hackathons/NurseHack4Health)
+- [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
-[**OpenHack**:FHIR](./FHIR/Hackathon)
+[**OpenHack:FHIR**](Projects/FHIR/Hackathon)

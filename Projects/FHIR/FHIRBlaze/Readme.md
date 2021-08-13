@@ -1,4 +1,4 @@
-# FhirBlaze
+# [FhirBlaze](https://github.com/microsoft/FhirBlaze)
 
 [Back to ToC](https://github.com/microsoft/emerging-opportunities/)
 
@@ -18,6 +18,7 @@ This project delivered the following services:
 2. [Working with FHIR Patient](./learnings/working-with-fhir-patient.md)
 3. [Our Impressions of Microfrontends](./learnings/impressions-of-microfrontends.md)
 4. [Firely's HL7.FHIR Nuget Package Gotchas](./learnings/Using-HL7-.Net-Library.md)
+5. [Embedding Power BI in Blazor](./learnings/pbiblazor.md)
 
 ## References
 * [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) 
