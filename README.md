@@ -24,10 +24,9 @@
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 
-[**Genomics**](Hackathons/Genomics)
-[**Genomics**](Hackathons/Genomics)
+[**Genomics**](Projects/Genomics)
 
-[**NurseHack4Health**](Projects/NurseHack4Health)
+[**NurseHack4Health**](Hackathons/NurseHack4Health)
 - [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
 [**OpenHack:FHIR**](Projects/FHIR/Hackathon)
