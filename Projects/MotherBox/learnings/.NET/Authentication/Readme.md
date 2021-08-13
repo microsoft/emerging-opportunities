@@ -1,6 +1,6 @@
 # Authentication Learnings
 
-During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and [GraphQL](https://github.com/microsoft/emerging-opportunities/blob/main/MotherBox/GraphQL/Readme.md)_ 
+During our sprint we were tasked to create an app that involved _.NET Core Api, Entity Framework, and [GraphQL](https://github.com/microsoft/emerging-opportunities/blob/main/Projects/MotherBox/learnings/GraphQL/Readme.md)_ 
 
 > [**Check out our Blazor/GraphQL starter kit!**](https://github.com/microsoft/blazor-graphql-starter-kit) leveraging these learnings.
 
@@ -50,7 +50,7 @@ Official doc on how to use [**Azure's built in authentication**](https://docs.mi
 
 **Issues** 
 
-While working on our internal project (blazor/graphql application) we ran into some issues. **Graphql and EasyAuth** [Hotchocolate's Playground](https://github.com/microsoft/emerging-opportunities/tree/main/MotherBox/Banana%20Cake%20Pop) throws CORs error and we had to turn off the easy-auth. But we solved the issue by adding the Auth code to allow authorization by adding 
+While working on our internal project (blazor/graphql application) we ran into some issues. **Graphql and EasyAuth** [Hotchocolate's Playground](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/Banana%20Cake%20Pop) throws CORs error and we had to turn off the easy-auth. But we solved the issue by adding the Auth code to allow authorization by adding 
 
 As we were leveraging the EasyAuth, we ran into an issue with GraphQL not being nice with the EasyAuth.  HotChocolate (and other GraphQL)libraries ([What is HotChocolate](https://chillicream.com/docs/hotchocolate/)?) have an UI application called 'Playground' that can be accessed through an endpoint. Developers can use that to checkout the schema and test out queries. 
 
