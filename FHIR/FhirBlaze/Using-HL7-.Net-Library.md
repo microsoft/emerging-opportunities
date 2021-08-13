@@ -1,6 +1,10 @@
 # Things I wish I knew... 
 
-### Creating a Questionnaire item
+### Creating a Questionnaire Item 
+
+TL;DR; 
+
+**Follow your instinct and set the value to QuestionnaireItem.Item.Type but when debugging, look for the value in TypeElement!**
 
 [This is HL7 document page around questionnaire object](https://www.hl7.org/fhir/questionnaire.html)
 
@@ -31,6 +35,17 @@ As you can see, the value is 3, which is of 'Boolean' type:
 <img src="./images/questionnaire-typedefinition.PNG" width="50%" alt="type def screenshot">
 
 However, this is what we see:
-<img src="./images/questionnaire-grouptype.PNG" width="50%" alt="[Group type">
+
+<img src="./images/questionnaire-grouptype.PNG" width="50%" alt="Group type">
+
+_**The value was kept on getting set to Group!!**_ So frustrating...
+
+After few hours of investigation without much documentation, I saw the type getting set somewhere else!
+
+> ItemComponent.TypeElement.Code<QuestionnaireItemType>.ObjectValue 
+
+<img src="./images/questionnaire-typeelement.PNG" width="50%" alt="Group type">
+    
+In conclusion, when you are trying to debug, don't look at the Type!!
 
 [This is the library we used](https://www.nuget.org/packages/Hl7.Fhir.R4/)
