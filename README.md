@@ -27,5 +27,6 @@
 [**Genomics**](./Genomics)
 
 [**NurseHack4Health**](./NurseHack4Health)
+- [Reusable Components (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
 [**OpenHack**:FHIR](./FHIR/Hackathon)
