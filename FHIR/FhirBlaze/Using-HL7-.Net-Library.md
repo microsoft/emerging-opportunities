@@ -1,11 +1,9 @@
 # Things I wish I knew... 
 
-### Creating a Questionnaire Item 
+### Creating a [Questionnaire](https://www.hl7.org/fhir/questionnaire.html) Item 
 
 > TL;DR; 
 > **Follow your instinct and set the value to QuestionnaireItem.Item.Type but when debugging, look for the value in TypeElement!**
-
-[This is HL7 document page around questionnaire object](https://www.hl7.org/fhir/questionnaire.html)
 
 When creating a [Questionnaire Item](https://www.hl7.org/fhir/questionnaire-definitions.html#Questionnaire.item) we need to choose which [Type](https://www.hl7.org/fhir/valueset-item-type.html) of item we want our question to be. 
 
