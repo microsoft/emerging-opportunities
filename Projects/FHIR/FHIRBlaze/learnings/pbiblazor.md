@@ -1,7 +1,7 @@
 # Embedding Power BI in Blazor
 
 
-![Placeholder](assets/blazor.png){ align=center }
+![Placeholder](assets/blazor.png)
 
 # Table of contents
 
