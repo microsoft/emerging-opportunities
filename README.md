@@ -21,6 +21,6 @@
 
 >> Hackathons
 - [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
-- [Genomics](./Genomics)
-- [NurseHack4Health](./NurseHack4Health)
-- [OpenHack:FHIR](./FHIR/Hackathon)
+- [**Genomics**](./Genomics)
+- [**NurseHack4Health**](./NurseHack4Health)
+- [**OpenHack**:FHIR](./FHIR/Hackathon)
