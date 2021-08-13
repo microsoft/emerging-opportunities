@@ -7,18 +7,13 @@ It's a human readable health record that allows accessibility and interoperabili
 
 [Resource](https://www.healthit.gov/topic/standards-technology/standards/fhir-fact-sheets)
 
-## Projects
+## Projects / Hackathon
 
-### FHIRBlaze
-[Click here for more details!](./FhirBlaze)
+[**FHIRBlaze**](./FhirBlaze)
 
-### FHIRPower 
-[Click for more details](./FHIRPower)
+[**FHIRPower**](./FHIRPower)
+- Application leveraging custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR to interact with records stored in FHIR
 
-Application leveraging custom connectors (usable in PowerAutomate, Flow and LogicApps) and Microsoft's Azure API for FHIR to interact with records stored in FHIR
+[**OpenHack: FHIR**](https://github.com/microsoft/OpenHack-FHIR) 
 
-### OpenHack: FHIR
-[Link to Hackathon Material](https://github.com/microsoft/OpenHack-FHIR) 
-
-Two day internal hackathon 
 
