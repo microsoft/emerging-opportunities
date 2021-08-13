@@ -6,7 +6,7 @@
 
 When creating a (Questionnaire Item)[https://www.hl7.org/fhir/questionnaire-definitions.html#Questionnaire.item] we need to choose which (Type)[https://www.hl7.org/fhir/valueset-item-type.html] of item we want our question to be. 
 
-![dropdown example](./images/questionnaire-dropdownmenu.png)
+![dropdown example](./images/questionnaire-dropdownmenu.PNG)
 
 Below is a code snippet from our code. We are trying to bind the Type property of ItemComponent to the selection from the dropdown shown above:
 
