@@ -1,5 +1,7 @@
 # FhirBlaze
 
+[Back to ToC](https://github.com/microsoft/emerging-opportunities/)
+
 ## Overview
 FhirBlaze project leverages Blazor WebAssembly application and Fast Health Interoperability Resources (FHIR) API.
 
