@@ -6,8 +6,7 @@
 
 When creating a [Questionnaire Item](https://www.hl7.org/fhir/questionnaire-definitions.html#Questionnaire.item) we need to choose which [Type](https://www.hl7.org/fhir/valueset-item-type.html) of item we want our question to be. 
 
-![dropdown example](./images/questionnaire-dropdownmenu.PNG)
-<img src="./images/questionnaire-dropdownmenu.PNG" width="50%">
+<img src="./images/questionnaire-dropdownmenu.PNG" width="50%" alt="dropdown example">
 
 Below is a code snippet from our code. We are trying to bind the Type property of ItemComponent to the selection from the dropdown shown above:
 
@@ -25,14 +24,13 @@ private void GetOption(ChangeEventArgs e)
 
 Once the selection is made on the dropdown this is what we see:
 
-![selected type value](./images/questionnaire-typevalue.PNG "type value screenshot")
+<img src="./images/questionnaire-typevalue.PNG" alt="type value">
 
 As you can see, the value is 3, which is of 'Boolean' type:
 
-![Questionnaire item type definition](./images/questionnaire-typedefinition.PNG "type def screenshot")
+<img src="./images/questionnaire-typedefinition.PNG" width="50%" alt="type def screenshot">
 
 However, this is what we see:
-
-![Group type](./images/questionnaire-grouptype.PNG "group type screenshot")
+<img src="./images/questionnaire-grouptype.PNG" width="50%" alt="[Group type">
 
 [This is the library we used](https://www.nuget.org/packages/Hl7.Fhir.R4/)
