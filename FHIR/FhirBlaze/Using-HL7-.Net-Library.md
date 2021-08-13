@@ -41,7 +41,7 @@ After few hours of investigation without much documentation, I saw the type gett
 
 > ItemComponent.TypeElement.Code<QuestionnaireItemType>.ObjectValue 
 
-<img src="./images/questionnaire-typeelement.PNG" width="50%" alt="Group type">
+<img src="./images/questionnaire-typeelement.PNG" width="50%" alt="type element">
     
 In conclusion, when you are trying to debug, don't look at the Type!!
 
