@@ -109,5 +109,5 @@ Variables can be used in place of hard coded values.  This is usefull in simulat
 
 Sample Variables in [Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/Banana%20Cake%20Pop)
    
-![Sample Variables in Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/blob/main/Projects/MotherBox/GraphQL/Variables.png)
+![Sample Variables in Banana Cake Pop](https://github.com/microsoft/emerging-opportunities/blob/main/Projects/MotherBox/learnings/GraphQL/Variables.png)
 
