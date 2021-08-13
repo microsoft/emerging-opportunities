@@ -17,12 +17,15 @@ Here are some of the reusuable technologies we have built in order to help for f
 [MSAL Authentication for React Apps](react-msal-auth.md)
 
 [**User Registration**](https://github.com/microsoft/NH4H-UserReg) (ReactJS, MSAL, GraphQL) - This application acts as a middleware between the registration page and MSTeams. Once the user is registers (using Microsoft account) the application adds the user to NH4H's Teams so they can collaborate with hundreds of other participants through out the hackathon.  
+- [**Checkout Our Code!**](https://github.com/microsoft/NH4H-UserReg)
 
 [**Team Builder**](https://github.com/microsoft/NH4H-TeamBuilder) (ReactJS, SemanticUI) - This app allows participants to form their own team based on challenges they want to tackle and skills needed. It leverages their github id and automatically adds tie them to a github team/repo. 
-
+- [**Checkout Our Code!**](https://github.com/microsoft/NH4H-TeamBuilder)
+ 
 > ([See all teams/repos](https://github.com/NurseHack4Health) formed during our past NH4H events)
                 
 [**Gamification**](https://github.com/microsoft/NH4H-GamificationUI) (ReactJS, SemanticUI) - This app gamifies the hackathon. Participants are awarded points when they accomplish the given tasks.
+- [**Checkout Our Code!**](https://github.com/microsoft/NH4H-GamificationU)
 
 ## Past Hackathons
 [Event Repository](https://github.com/NurseHack4Health)
