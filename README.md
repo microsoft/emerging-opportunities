@@ -4,10 +4,10 @@
 
 ## Table of Content
 
-[**FHIRBlaze**](./FHIR/FhirBlaze) (Blazor/Azure Fhir API) 
+[**FHIRBlaze**](./projects/FHIR/FhirBlaze) (Blazor/Azure Fhir API) 
 > Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
 
-[**MotherBox**](./MotherBox) (.NetCore/Blazor/GraphQL) 
+[**MotherBox**](./projects/MotherBox) (.NetCore/Blazor/GraphQL) 
 - [GraphQL (HotChocolate)](./MotherBox/GraphQL)
 - [.NET](./MotherBox/.NET)
 - [Azure Data Factory](./MotherBox/ADF)
@@ -15,17 +15,17 @@
 
 ### Past Sprints
 
-[**FHIRPower**](./FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
+[**FHIRPower**](./projects/FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
 
-[**Verifiable Credentials**](./Verifiable-Credentials)
+[**Verifiable Credentials**](./projects/Verifiable-Credentials)
 
 ### Hackathons
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 
-[**Genomics**](./Genomics)
+[**Genomics**](./hackathons/Genomics)
 
-[**NurseHack4Health**](./NurseHack4Health)
+[**NurseHack4Health**](./hackathons/NurseHack4Health)
 - [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
-[**OpenHack**:FHIR](./FHIR/Hackathon)
+[**OpenHack**:FHIR](./projects/FHIR/Hackathon)
