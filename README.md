@@ -17,6 +17,7 @@
 ### Past Sprints
 
 [**FHIRPower**](./FHIR/FHIRPower)
+
 [**Verifiable Credentials**](./Verifiable-Credentials)
 
 ### Hackathons
