@@ -1,6 +1,6 @@
 # Overview
 
-[back to NH4H](../)
+[< back to NH4H](Readme.md)
 
 Enterprise developers are increasingly using React to develop applications- but what happens when you need to add authetnication?  Reagrdless of if you're authenticating internal only, or internal/external users we hope this document will help!
 
