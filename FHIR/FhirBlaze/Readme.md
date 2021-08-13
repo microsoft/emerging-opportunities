@@ -15,6 +15,7 @@ This project delivered the following services:
 1. [How to connect to fhir](connecting-to-fhir.md)
 2. [Working with FHIR Patient](working-with-fhir-patient.md)
 3. [Our Impressions of Microfrontends](impressions-of-microfrontends.md)
+4. [Firely's HL7.FHIR Nuget Package Gotchas](Using-HL7-.Net-Library.md)
 
 ## References
 * [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) 
