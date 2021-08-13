@@ -4,29 +4,29 @@
 
 ## Table of Content
 
-[**FHIRBlaze**](Projects/FHIR/FhirBlaze) (Blazor/Azure Fhir API) 
+[**FHIRBlaze**](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/FHIR/FhirBlaze) (Blazor/Azure Fhir API) 
 > Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
 
-[**MotherBox**](./Projects/MotherBox) (.NetCore/Blazor/GraphQL) 
+[**MotherBox**](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox) (.NetCore/Blazor/GraphQL) 
 > Unfortunately, this is an internal app so we won't be able to share details of the data and code but we should still be able to show you snippets and share our learnings :)
-- [GraphQL (HotChocolate)](./Projects/MotherBox/learnings/GraphQL)
-- [.NET](./Projects/MotherBox/learnings/.NET)
-- [Azure Data Factory](./Projects/MotherBox/learnings/ADF)
+- [GraphQL (HotChocolate)](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/GraphQL)
+- [.NET](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/.NET)
+- [Azure Data Factory](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/ADF)
 
 
 ### Past Sprints
 
-[**FHIRPower**](./Projects/FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
+[**FHIRPower**](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
 
-[**Verifiable Credentials**](./Projects/Verifiable-Credentials)
+[**Verifiable Credentials**](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/Verifiable-Credentials)
 
 ### Hackathons
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 
-[**Genomics**](./Hackathons/Genomics)
+[**Genomics**](https://github.com/microsoft/emerging-opportunities/tree/main/Hackathons/Genomics)
 
-[**NurseHack4Health**](./Hackathons/NurseHack4Health)
+[**NurseHack4Health**](https://github.com/microsoft/emerging-opportunities/tree/main/Hackathons/NurseHack4Health)
 - [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
-[**OpenHack**:FHIR](./Projects/FHIR/Hackathon)
+[**OpenHack**:FHIR](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/FHIR/Hackathon)
