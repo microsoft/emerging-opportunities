@@ -1,6 +1,6 @@
 # FHIR News
 
-[Back to TOC](../)
+[Back to TOC](https://github.com/microsoft/emerging-opportunities/)
 
 ## What is it and why do we need it??
 
