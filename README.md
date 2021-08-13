@@ -27,6 +27,6 @@
 [**Genomics**](Projects/Genomics)
 
 [**NurseHack4Health**](Hackathons/NurseHack4Health)
-- [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
+- [Reusable React App (Gamification, TeamBuilder, User Registration)](Hackathons/NurseHack4Health#reusable-ips)
 
 [**OpenHack:FHIR**](Projects/FHIR/Hackathon)
