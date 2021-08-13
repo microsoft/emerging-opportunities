@@ -5,8 +5,6 @@ Link to our hackathons:
 - [NurseHack4Health](../NurseHack4Health)
 - [FHIR Hackathon](../FHIR/Hackathon)
 
-### Interested in running your own hackathon? 
-
-Checkout our [**Starter-Kit**](https://github.com/microsoft/hackathon-starter-kit)!
+### Interested in running your own hackathon? Checkout our [**Starter-Kit**](https://github.com/microsoft/hackathon-starter-kit)!
 
 
