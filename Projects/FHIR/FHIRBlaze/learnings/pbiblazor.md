@@ -21,7 +21,7 @@
 Integration with PowerBI is easy to set up. We need reference to the **Microsoft.PowerBI.Api** NuGet package and some coding part JS and part C#  to get reports integrated to your Blazor webassembly app. But first you need a report, and before a report you need to connect your FHIR server to Power BI,  you can read how to connect it [here](https://docs.microsoft.com/en-us/power-query/connectors/fhir/fhir#connect-to-fhir-server) . Once connected you can easily extract the data from your FHIR server and build a [report](https://docs.microsoft.com/en-us/power-bi/create-reports/) like the one in the following figure:
 
 
-![Placeholder](assets/report.png){ align=center }
+![Placeholder](assets/report.png)
 
 [(Back to top)](#table-of-contents)
 
@@ -210,4 +210,4 @@ Finally, create your **PowerBI.razor** page!!  using the following code:
 After all these steps you should be able to run your project normally and show the report like the following image:
 [(Back to top)](#table-of-contents)
 
-![Placeholder](assets/app.png){ align=center }
+![Placeholder](assets/app.png)
