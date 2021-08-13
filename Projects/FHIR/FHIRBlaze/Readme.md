@@ -1,4 +1,4 @@
-# [FhirBlaze](https://github.com/microsoft/FhirBlaze) #### link to code
+# [FhirBlaze](https://github.com/microsoft/FhirBlaze)
 
 [Back to ToC](https://github.com/microsoft/emerging-opportunities/)
 
