@@ -2,9 +2,8 @@
 
 ### Creating a Questionnaire Item 
 
-TL;DR; 
-
-**Follow your instinct and set the value to QuestionnaireItem.Item.Type but when debugging, look for the value in TypeElement!**
+> TL;DR; 
+> **Follow your instinct and set the value to QuestionnaireItem.Item.Type but when debugging, look for the value in TypeElement!**
 
 [This is HL7 document page around questionnaire object](https://www.hl7.org/fhir/questionnaire.html)
 
