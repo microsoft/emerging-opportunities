@@ -1,18 +1,10 @@
 # FHIRPower News
 
+[Back to Main](https://github.com/microsoft/emerging-opportunities/)
+
 [**Go to FHIRPower repo**](https://github.com/microsoft/FHIRPower)
 
-## What is it?
-
-Application that showcases the possibilities of Azure API for FHIR and custom connectors to interact with records in FHIR server.
-
-## Current Sprint
-
-*none*
-
-## Past Sprints
-
-### Sprint 24
+> Application that showcases the possibilities of Azure API for FHIR and custom connectors to interact with records in FHIR server.
 
 We developed patient's and clinician's app using PowerApp and customer connecters to access different records below to create an Appointment between patients and doctors/practitioners:
 

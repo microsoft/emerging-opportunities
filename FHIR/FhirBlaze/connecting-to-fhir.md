@@ -11,9 +11,9 @@ We want to offer options in multiple languages with and without libraries.
 
 ## Languages used in this sample
 We created [fhir-blaze](https://github.com/microsoft/FhirBlaze) to demo a FHIR webapp using Blazor Web Assembley for dotnet.  This sample is a frontend engine, but the code samples below should also work on a server side app. 
-The languages we prodovide samples for are: 
+The languages we provide samples for are: 
 * .NET C#
-* Javascript
+* JavaScript
 
 # Patterns
 We have included the following patterns to connect to a FHIR API.
@@ -22,9 +22,10 @@ We have included the following patterns to connect to a FHIR API.
 * [FHIR.js](FHIR.js)
 
 
-
 ## HTTP Client
 This approach only uses 1st party packages.   It is also a good starter.  
+
+
 
 NuGet Packages Required:
 * Microsoft.Authentication.WebAssembly.MSAL
@@ -111,11 +112,13 @@ To streamline and consolidate your startup code, you can move the above steps to
 * [FhirServiceExtensions.cs](https://github.com/microsoft/FhirBlaze/blob/main/FhirBlaze/FhirServiceExtensions.cs)
 
 ## Fhir.js
-FHIR.js is a javascript library for FHIR that supports:
+FHIR.js is a JavaScript library for FHIR that supports:
 * Support FHIR CRUD operations
 * Friendly and expressive query syntax
 [Read the docs](https://github.com/FHIR/fhir.js/) for more information on implementing.
 [Read this doc](https://github.com/Azure-Samples/ms-identity-javascript-tutorial) for further information on setting up MSAL on javascript.
+
+
 
 ### Configuring FHIR.js
 1. Setup MSAL
