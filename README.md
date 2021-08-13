@@ -4,7 +4,7 @@
 
 ## Table of Content
 
-[**FHIRBlaze**](./FHIR/FhirBlaze) (current sprint) 
+[**FHIRBlaze**](./FHIR/FhirBlaze) (Blazor/Azure Fhir API) 
 > Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
 
 [**MotherBox**](./MotherBox) (.NetCore/Blazor/GraphQL) 
@@ -16,7 +16,7 @@
 
 ### Past Sprints
 
-[**FHIRPower**](./FHIR/FHIRPower)
+[**FHIRPower**](./FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
 
 [**Verifiable Credentials**](./Verifiable-Credentials)
 
@@ -27,6 +27,6 @@
 [**Genomics**](./Genomics)
 
 [**NurseHack4Health**](./NurseHack4Health)
-- [Reusable Components (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
+- [Reusable React App (Gamification, TeamBuilder, User Registration)](https://github.com/microsoft/emerging-opportunities/tree/main/NurseHack4Health#reusable-ips)
 
 [**OpenHack**:FHIR](./FHIR/Hackathon)
