@@ -42,11 +42,11 @@ This worked well overall although we did run into a few bugs with our mapping co
 
 Mapping to/from the Hl7.Fhir.Model.Patient should have been relatively straight forward. However the complex/nested structure of the model makes it tricky to work with. Looking at the Patient resource documentation, you notice that the patient name is a nested object of type of HumanName.
 
-<img src="./images/patient-resource.png">
+<img src="../images/patient-resource.png">
 
 The HumanName has the underlying information, but you notice some of the attributes can have more than one value. For example "given" name. While "family" name can either be empty or at most a single value.
 
-<img src="./images/patient-human-name.png">
+<img src="../images/patient-human-name.png">
 
 This gives the spec flexibility, but it makes extracting a simple element such as a patient name tricky. Here's something I thought would work and banged my head a few times to get it to work.
 

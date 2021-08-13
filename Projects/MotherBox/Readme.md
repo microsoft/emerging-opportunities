@@ -30,10 +30,10 @@ Concepts include:
 
 Interested in the tech side of things?
 
-[GraphQL Learnings and snippets](./GraphQL)
+[GraphQL Learnings and snippets](./learnings/GraphQL)
 
-[.NET Authentication with HotChocolate](../.NET/Authentication)
+[.NET Authentication with HotChocolate](./learnings/.NET/Authentication)
 
-[Azure Data Factory setup](./Data)
+[Azure Data Factory setup](./learnings/Data)
 
-[Using Banana Cake Pop](./Banana%20Cake%20Pop/Readme.md)
+[Using Banana Cake Pop](./learnings/Banana%20Cake%20Pop/Readme.md)
