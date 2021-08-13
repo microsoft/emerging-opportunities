@@ -5,7 +5,6 @@
 ## Table of Content
 
 [**FHIRBlaze**](Projects/FHIR/FHIRBlaze) (Blazor/Azure Fhir API) 
-> Blazore WASM app with FHIR connector. This application can create/list Patients and Questionnaires. Click [here](https://github.com/microsoft/fhirblaze) to check out our code! 
 
 [**MotherBox**](Projects/MotherBox) (.NetCore/Blazor/GraphQL) 
 - [GraphQL (HotChocolate)](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/GraphQL)
