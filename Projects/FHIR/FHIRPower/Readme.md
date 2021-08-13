@@ -2,7 +2,7 @@
 
 [Back to Main](https://github.com/microsoft/emerging-opportunities/)
 
-### [**Checkout our code!**](https://github.com/microsoft/FHIRPower)
+### [**Check out our code!**](https://github.com/microsoft/FHIRPower)
 
 > Application that showcases the possibilities of Azure API for FHIR and custom connectors to interact with records in FHIR server.
 
