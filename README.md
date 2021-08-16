@@ -2,7 +2,7 @@
 
 [**Checkout out our up to date backlog**](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics)
 
-## Table of Content
+# Table of Content
 
 [**FHIRBlaze**](Projects/FHIR/FHIRBlaze) (Blazor/Azure Fhir API) 
 
@@ -11,14 +11,13 @@
 - [Authentication](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/.NET/Authentication)
 - [Azure Data Factory](https://github.com/microsoft/emerging-opportunities/tree/main/Projects/MotherBox/learnings/ADF)
 
-
-### Past Sprints
-
 [**FHIRPower**](Projects/FHIR/FHIRPower) (PowerApp, Custom Connectors, Azure Fhir API)
 
 [**Verifiable Credentials**](Projects/Verifiable-Credentials)
 
-### Hackathons
+## Hackathons
+
+[**Want to run your own Hackathon? Checkout out our Starter-Kit!**](https://github.com/microsoft/hackathon-starter-kit)
 
 [**Tech Serum (6/11/21 - 6/13/21)**](https://www.thewhyse.com/events/techserum-healthcare-er-visit/) - Microsoft sponsored community hackathon. 
 
