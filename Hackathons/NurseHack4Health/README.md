@@ -14,6 +14,10 @@ The NurseHack4Health virtual hackathon will use the MIT open-source license, one
 ## Reusable IPs 
 Here are some of the reusuable technologies we have built in order to help for future hackathons we or anyone else might want to run.
 
+[Calling an OAuth protected API from a Teams App](Calling-an-OAuth-protected-API-from-a-Teams-App.md)
+
+[Converting A React App to a Teams App](Converting-A-React-App-to-a-Teams-App.md)
+
 [MSAL Authentication for React Apps](react-msal-auth.md)
 
 [**User Registration** (check out our code!)](https://github.com/microsoft/NH4H-UserReg) (ReactJS, MSAL, GraphQL) - This application acts as a middleware between the registration page and MSTeams. Once the user is registers (using Microsoft account) the application adds the user to NH4H's Teams so they can collaborate with hundreds of other participants through out the hackathon.  
