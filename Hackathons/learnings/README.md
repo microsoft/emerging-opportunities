@@ -11,3 +11,7 @@ Our legacy API -
   - In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. 
     - But I'm sure lot of shops do similar things. In order to push code out the design you think that's going to last don't really do you any good. OR you just write code without designing at all! 
 - 
+
+
+
+test
