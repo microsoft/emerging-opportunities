@@ -10,11 +10,13 @@ We want to decouple what we currently have into separate _components_. Component
 
 ## What does this have to do with me?
 
-We believe componentizing your architecture is a big step towards modern architecture. Just as us developers believe in clean code (aka. [smaller functions](https://dev.to/danialmalik/a-brief-guide-to-clean-code-functions-104h#:~:text=A%20Brief%20Guide%20to%20Clean%20Code%3A%20Functions%201,of%20the%20system%20while%20classes%20are%20the%20nouns.)) we believe we have to think of our software architecture similarly. Each small components doing only what they are supposed to and pass it along to another at.   you decouple and refactor your code 
-**Refactoring and Modernizing On-Prem services**
-Whether you are on a cloud already or thinking of modernizing your current architecture this article will hopefully give you a decent grasp of how you can go about doing it. 
+Though above is a small example we believe componentizing your architecture is a big step towards modernizing your architecture. 
 
-### So what do we do? 
+We as developers believe in [Clean Code](https://dev.to/danialmalik/a-brief-guide-to-clean-code-functions-104h#:~:text=A%20Brief%20Guide%20to%20Clean%20Code%3A%20Functions%201,of%20the%20system%20while%20classes%20are%20the%20nouns.)). We have to think software architecture, similarly. Each small components doing only what they are supposed to and pass it along to another. This helps us to architect cleaner and sensible solutions in the cloud. 
+
+So, whether you are already on the cloud or thinking of modernizing your current architecture this article will hopefully give you a decent grasp of how you can go about approaching it the right way. 
+
+## Show me!
 
 ### Hello EventGrid and Serverless
 
