@@ -34,7 +34,18 @@ One step further than an app service route is the Serverless ([Azure Functions](
 Now... the fun(?) part!
 
 ### Events and Messages 
+As you manage multiple components event and messaging architecture becomes very important. 
 
+- **Events** 
+  - Think of it as a notification from System A to System B. 
+- **Messaging** 
+  - Think of it as a task given by System A to System B. 
+
+Whichever direction you go you need a _Broker_. 
+
+The broker we chose for our example is [Azure Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/overview).
+
+> [Checkout the doc](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services) which explains different event-driven services in Azure 
 
 ![eventgrid_diagram](./images/diagram.png)
 
