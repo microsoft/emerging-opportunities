@@ -47,7 +47,14 @@ The broker we chose for our example is [Azure Event Grid](https://docs.microsoft
 
 > [Checkout the doc](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services) which explains different event-driven services in Azure 
 
+### Our Proposed Plan
 ![eventgrid_diagram](./images/diagram.png)
+
+### Explanation
+
+
+
+
 
 ### Lesson to be learnt
 In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. But I'm sure lot of development shops do similar things. In order to push code out the design you think that's going to last don't really do you any good. OR you just write code without designing at all! 
