@@ -1,4 +1,5 @@
-# EventGrid? Serverless? Why?
+# Event Grid? Serverless? Why?
+In this article, @i-am-dan and @pjirsa highlight the benefits of a modern event-based cloud architecture while migrating a legacy WebAPI to Azure. 
 
 ## Our Story
 
@@ -48,12 +49,13 @@ One step further than an app service route is the Serverless ([Azure Functions](
 Now... the fun(?) part!
 
 ### Events and Messages 
-As you manage multiple components event and messaging architecture becomes very important. 
+As you manage multiple components, event and messaging architecture becomes very important. We want our services to communicate and respond to each other. However, if we make direct calls between them, we are re-introducing strict dependencies. Ideally, these services should be able to communicate without needing any specific knowledge about what those services are, or where they are located. To accomplish this, we introduce an eventing system. 
 
+Should I use events or messages? 
 - **Events** 
-  - Think of it as a notification from System A to System B. 
+  - Think of it as a notification. The sender of an event does not necessarily care who receives or acts on the event. Eventing systems typically provide confirmation that an event has been submitted, and no response to the sender that a subscriber has consumed or processed the event.
 - **Messaging** 
-  - Think of it as a task given by System A to System B. 
+  - Think of it as a task given by System A to System B. Messages usually contain a data payload. Messaging systems can accomodate a more formal relationship between a publisher and a subscriber. The sender generally knows who the consumer will be and is sending a data payload that the consumer expects for processing. 
 
 Whichever direction you go you need a _Broker_. 
 
@@ -66,15 +68,15 @@ The broker we chose for our example is [Azure Event Grid](https://docs.microsoft
 
 (Figure 2)
 
-Figure 2 represents the architecture of our refactored solution. The core functionality of the API is still there. But we have moved all the customizable supporting features out to their own services. In order to de-couple them from the original API, and orchestrate the business logic, an Event Grid Topic has been implemented. This service receives event notifications from the API when operations are performed on the registration data. Our supporting feature services can subscribe to these notifications to take the appropriate action when changes in the system occur.
+Figure 2 represents the architecture of our refactored solution. The core functionality of the API is still there. But we have moved all the customizable supporting features out to their own services. In order to decouple them from the original API, and orchestrate the business logic, an Event Grid Topic has been implemented. This service receives event notifications from the API when operations are performed on the registration data. Our supporting feature services can subscribe to these notifications to take the appropriate action when changes in the system occur.
 
 ### What are the benefits?
 The immediate impact of this redesign is tremendous.
 
-* Each component is completely autonomous. Interdependencies are de-coupled and cross-service communication is faciliated by a highly fault-tolerant messaging system.
-* Cyclomatic Complexity of each component is greatly reduced. In some cases reaching a perfect score. This has the added benefit of making the code easier to test and easier for developers to understand.
+* Each component is completely autonomous. Interdependencies are decoupled and cross-service communication is faciliated by a highly fault-tolerant messaging system.
+* Cyclomatic Complexity of each component is greatly reduced. In some cases reaching a perfect score. This has the added benefit of making the code easier to test and easier for developers to understand. Not only are unit tests easier, but integration testing can be done by testing each component individually. For example, before the changes, we would have to submit an entire "new user" request through the API to make sure that the "Add to Mailchimp" feature was working properly. Now, we can just test that one service on its own.
 * Updates to the system are much easier now. Each of the supporting services are "plug-n-play". For example, we can easily swap out the Mailchimp service for another service that interfaces with SendGrid. 
-* EventGrid allows multiple subscriptions to the same event, which makes adding new features and layering in additional business logic a snap.
+* Event Grid allows multiple subscriptions to the same event, which makes adding new features and layering in additional business logic a snap.
 
 
 ### The downside
@@ -82,7 +84,13 @@ You might be saying, "But now there are so many more 'things' to deal with!". Ye
 
 
 ### Lesson to be learnt
-In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. But I'm sure lot of development shops do similar things. In order to push code out, the design you think is going to last doesn't really do you any good, OR you just write code without designing at all! IT'S OK! The point is to *LEARN* from what you have built and try to continuously improve.
+In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. But I'm sure lot of development shops do similar things. In order to push code out, the design you think is going to last doesn't really do you any good, OR you just write code without designing at all! IT'S OK! The point is to *LEARN* from what you have built and try to continuously improve. 
+
+The cloud offers flexibility. A light-weight, adaptable design for the cloud is more resilient to changes in feature requirements. As your needs change and grow, you are not locked in to the server or license you bought last year, you can scale up, down, out and in whenever you need to and the cost is only for what you use.
 
 ## The Final Word
 Migrating legacy application architectures to the cloud sometimes requires a shift in perspective and thought-process. These cloud-native patterns can seem foreign and complicated at first. But with a little time and experience you will start to see the flexibility, scalability, and cost benefits of these designs.
+
+## About the Authors
+- Phil Jirsa, Sr. Cloud Solution Architect, Microsoft
+- Daniel Kim, Sr. Cloud Solution Architect, Microsoft 
