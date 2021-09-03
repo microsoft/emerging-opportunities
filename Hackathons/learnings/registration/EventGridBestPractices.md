@@ -4,7 +4,21 @@
 
 **Our legacy API (Hackathon registration service)** 
 
-As more requirements were being asked the more code we shoved into our codebase. Our codebase was at a state where we had to change other parts of the code that were unneccesary when we try add a functionality. 
+![Figure 1](./images/figure-1.png)
+
+(Figure 1)
+
+Figure 1 represents the architecture of our original Hackathon Registration service. It includes the following components:
+1. Registration Form - A website which collects registration info from a new hackathon participant.
+1. Registration API - An ASP.NET Core WebAPI providing CRUD over the registration data.
+1. Registration DB - An Azure SQL Database to persist registration data.
+
+Over time, additional functionality and business logic has been added to the legacy API. Some examples are:
+* Adding a new user to a mailing list service (Mailchimp).
+* Inviting new guest users to an Azure AD tenant.
+* Adding a new user to a Microsoft Teams team and channels.
+
+As more requirements were being asked, the more code we shoved into our codebase. Maintenance of the code is also becoming quit cumbersome. While the core functionality of collecting and storing user registration information remains constant, each hackathon event usually has its own requirements around the other capabilities. Some events want to use an alternate mailing list provider. Others want to configure a unique hierarchy for teams and channels. Our API codebase quickly started filling up with conditional statements and logical branches making it nearly impossible to test and difficult to maintain.
 
 We want to decouple what we currently have into separate _components_. Components that are essential to the business logic and components that are ad-hoc and modifiable. This removes the need to bake unneccessary code into our base business logic. We decided to take a spike and design out how we can accomplish that using out of the box Azure services.  
 
@@ -47,16 +61,28 @@ The broker we chose for our example is [Azure Event Grid](https://docs.microsoft
 
 > [Checkout the doc](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services) which explains different event-driven services in Azure 
 
-### Our Proposed Plan
-![eventgrid_diagram](./images/diagram.png)
+## Our Solution
+![Figure 2](./images/figure-2.png)
 
-### Explanation
+(Figure 2)
+
+Figure 2 represents the architecture of our refactored solution. The core functionality of the API is still there. But we have moved all the customizable supporting features out to their own services. In order to de-couple them from the original API, and orchestrate the business logic, an Event Grid Topic has been implemented. This service receives event notifications from the API when operations are performed on the registration data. Our supporting feature services can subscribe to these notifications to take the appropriate action when changes in the system occur.
+
+### What are the benefits?
+The immediate impact of this redesign is tremendous.
+
+* Each component is completely autonomous. Interdependencies are de-coupled and cross-service communication is faciliated by a highly fault-tolerant messaging system.
+* Cyclomatic Complexity of each component is greatly reduced. In some cases reaching a perfect score. This has the added benefit of making the code easier to test and easier for developers to understand.
+* Updates to the system are much easier now. Each of the supporting services are "plug-n-play". For example, we can easily swap out the Mailchimp service for another service that interfaces with SendGrid. 
+* EventGrid allows multiple subscriptions to the same event, which makes adding new features and layering in additional business logic a snap.
 
 
-
+### The downside
+You might be saying, "But now there are so many more 'things' to deal with!". Yes, that is true. But the benefits **FAR** out-weigh the downsides here. Cloud platforms (such as Azure) provide a wealth of governence and management tools out of the box that make it easy to provision, manage, and monitor 'all the things'.
 
 
 ### Lesson to be learnt
-In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. But I'm sure lot of development shops do similar things. In order to push code out the design you think that's going to last don't really do you any good. OR you just write code without designing at all! 
+In hindsight I guess we got to this point because we didn't have a good design discussion when the api was being created. But I'm sure lot of development shops do similar things. In order to push code out, the design you think is going to last doesn't really do you any good, OR you just write code without designing at all! IT'S OK! The point is to *LEARN* from what you have built and try to continuously improve.
 
-
+## The Final Word
+Migrating legacy application architectures to the cloud sometimes requires a shift in perspective and thought-process. These cloud-native patterns can seem foreign and complicated at first. But with a little time and experience you will start to see the flexibility, scalability, and cost benefits of these designs.
