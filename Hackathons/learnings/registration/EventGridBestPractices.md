@@ -13,22 +13,22 @@ Figure 1 represents the architecture of our original Hackathon Registration serv
 1. Registration API - An ASP.NET Core WebAPI providing CRUD over the registration data.
 1. Registration DB - An Azure SQL Database to persist registration data.
 
-Over time, additional functionality and business logic has been added to the legacy API. Some examples are:
+Over time, additional functionality and business logic have been added to the legacy API. Some examples are:
 * Adding a new user to a mailing list service (Mailchimp).
 * Inviting new guest users to an Azure AD tenant.
 * Adding a new user to a Microsoft Teams team and channels.
 
-As more requirements were being asked, the more code we shoved into our codebase. Maintenance of the code is also becoming quit cumbersome. While the core functionality of collecting and storing user registration information remains constant, each hackathon event usually has its own requirements around the other capabilities. Some events want to use an alternate mailing list provider. Others want to configure a unique hierarchy for teams and channels. Our API codebase quickly started filling up with conditional statements and logical branches making it nearly impossible to test and difficult to maintain.
+Of course more requirements mean more code! Our technical debt and existing design patterns were making it challenging to adapt to the new requirements. While the core functionality of collecting and storing user registration information remains constant, each hackathon event usually has its own requirements around other capabilities. Some events want to use an alternate mailing list provider. Others want to configure a unique hierarchy for teams and channels. Our API codebase quickly started filling up with conditional statements and logical branches making it nearly impossible to test and difficult to maintain.
 
-We want to decouple what we currently have into separate _components_. Components that are essential to the business logic and components that are ad-hoc and modifiable. This removes the need to bake unneccessary code into our base business logic. We decided to take a spike and design out how we can accomplish that using out of the box Azure services.  
+While the American divorce rate has [dropped](https://www.census.gov/library/stories/2020/12/united-states-marriage-and-divorce-rates-declined-last-10-years.html), we knew the answer to our problem was to decouple. We want to decouple what we currently have into separate _components_. Each component takes care of an atomic piece of business logic and should be easily modifiable without disrupting other components. This removes the need to bake unneccessary code into our base business logic. We decided to take a spike and design out how we can accomplish that using out of the box Azure services.
 
 ## What does this have to do with me?
 
-Though above is a small example we believe componentizing your architecture is a big step towards modernizing your architecture. 
+Though this API is a small example we believe componentizing your architecture while it's still small is a big step towards modernizing your architecture. 
 
-We as developers believe in [Clean Code](https://dev.to/danialmalik/a-brief-guide-to-clean-code-functions-104h#:~:text=A%20Brief%20Guide%20to%20Clean%20Code%3A%20Functions%201,of%20the%20system%20while%20classes%20are%20the%20nouns.). We have to think software architecture, similarly. Each small components doing only what they are supposed to and pass it along to another. This helps us to architect cleaner and sensible solutions in the cloud. 
+As developers, we believe in [Clean Code](https://dev.to/danialmalik/a-brief-guide-to-clean-code-functions-104h#:~:text=A%20Brief%20Guide%20to%20Clean%20Code%3A%20Functions%201,of%20the%20system%20while%20classes%20are%20the%20nouns.). We have to think software architecture, similarly. Each small component is doing only what it is supposed to and then passes control to another component. This helps us to architect cleaner and sensible solutions in the cloud. 
 
-So, whether you are already on the cloud or thinking of modernizing your current architecture this article will hopefully give you a decent grasp of how you can go about approaching it the right way. 
+Whether you are already on the cloud or just thinking about modernizing your current architecture, this article will hopefully give you a decent grasp of how you can go about approaching it the right way - or at least a better way. There's no one design pattern to address all solutions of course.
 
 ## Options Options Options
 
