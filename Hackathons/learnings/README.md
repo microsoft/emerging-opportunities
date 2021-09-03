@@ -3,4 +3,4 @@
 [Registration - Decoupling a monolith](./registration)
 
 
-[Team Builder - Migrating to Fluent UI](./teambuilder)
+[Team Builder - Migrating to Fluent UI](./teamBuilder)
