@@ -3,6 +3,8 @@
 [**Checkout out our up to date backlog**](https://dev.azure.com/HLSHack/CSU%20Backlog/_backlogs/backlog/CSU%20Backlog%20Team/Epics)
 
 # Table of Content
+[**Chestist**](Projects/Chestist) (React)
+- Helper app for radiologist to flag patients with different anomalies in the lungs
 
 [**FHIRBlaze**](Projects/FHIR/FHIRBlaze) (Blazor/Azure Fhir API) 
 
