@@ -17,6 +17,7 @@
 [**Verifiable Credentials**](Projects/Verifiable-Credentials)
 
 ## Hackathons
+[**Hack4Equity**](https://www.maternalhack4equity.com) - Even to create innovation around health equity for black mothers in GA
 
 [**Want to run your own Hackathon? Checkout out our Starter-Kit!**](https://github.com/microsoft/hackathon-starter-kit)
 
