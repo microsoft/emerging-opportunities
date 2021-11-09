@@ -4,6 +4,8 @@ This article is written by Microsoft's Cloud Solution Architects: [@Sameer-Doshi
 
 Rendering a [Questionnaire](https://www.hl7.org/fhir/questionnaire.html) component isn't as simple as creating a normal HTML form as each [Item](https://www.hl7.org/fhir/questionnaire-definitions.html#Questionnaire.item) component can both be a parent element or a child element. 
 
+> See it in action in our [FhirBlaze](https://github.com/microsoft/fhirblaze) repo
+
 Item can be a type of string, textarea, choice, bool, date... etc.... These are easy enough. But an Item can also be a type of Group, which can have the usual types mentioned before AND zero or more Group type.
 
 This makes the rendering of Questionnaire's json object a little bit tricky.
