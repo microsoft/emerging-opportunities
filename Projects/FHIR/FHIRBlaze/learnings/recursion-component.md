@@ -15,13 +15,14 @@ What we've come up with was combine RenderFragments and recursion to keep on tra
 
 Appending to our RenderFragment along the way.
 
-`protected override async Task OnInitializedAsync()
-        {
-            try
-            {
-                RenderComponent(QResponse.Item);
-                .
-                .
-                
-`
+``` C#
+protected override async Task OnInitializedAsync()
+{
+  try
+  {
+    RenderComponent(QResponse.Item);
+    .
+    .
+}
+```
 
