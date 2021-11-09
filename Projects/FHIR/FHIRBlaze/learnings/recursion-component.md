@@ -1,12 +1,12 @@
 # Recursively Create Blazor Component
 
-Rendering a Questionnaire(link) component isn't as simple as creating a normal HTML form as each Item(link) component can both be a parent element or a child element. 
+Rendering a [Questionnaire](https://www.hl7.org/fhir/questionnaire.html) component isn't as simple as creating a normal HTML form as each [Item](https://www.hl7.org/fhir/questionnaire-definitions.html#Questionnaire.item) component can both be a parent element or a child element. 
 
 Item can be a type of string, textarea, choice, bool, date... etc.... These are easy enough. But an Item can also be a type of Group, which can have the usual types mentioned before AND zero or more Group type.
 
 This makes the rendering of Questionnaire's json object a little bit tricky.
 
-## RenderFragments
+## [RenderFragments](https://www.syncfusion.com/faq/blazor/components/how-do-you-create-elements-dynamically-in-blazor)
 
 
 ## Recursion to save the day
