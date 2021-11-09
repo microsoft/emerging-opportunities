@@ -1,4 +1,4 @@
-This article is written by Microsoft's Cloud Solution Architects: [@Sameer-Doshi](https://github.com/SameerDoshi) and @Daniel-Kim(https://github.com/i-am-dan)
+This article is written by Microsoft's Cloud Solution Architects: [@Sameer-Doshi](https://github.com/SameerDoshi) and [@Daniel-Kim](https://github.com/i-am-dan)
 
 # Recursively Create Blazor Component
 
