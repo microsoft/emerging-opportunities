@@ -11,9 +11,49 @@ This makes the rendering of Questionnaire's json object a little bit tricky.
 
 ## Recursion to save the day
 
-What we've come up with was combine RenderFragments and recursion to keep on traversing go down the tree until it finds an item type that is not of Group. Then render from bottom up.
+What we've come up with was combine RenderFragments and recursion to keep on traversing go down the tree until it finds an item type that is not of Group. Then we'll use the recursive function to append to our RenderFragment along the way.
 
-Appending to our RenderFragment along the way.
+On the front end:
+
+``` C#
+// HTML/Blazor Front end
+<EditForm Model=@QResponse OnSubmit=@SubmitQuestionnaireAsync>
+   @DynamicFragment
+   .
+   .
+</EditForm>
+
+// Frontend @code block
+private RenderFragment DynamicFragment;
+private void RenderComponent(List<ItemComponent> items)
+{
+    DynamicFragment += GetChildItems(items);       
+}
+
+private RenderFragment GetChildItems(List<ItemComponent> items) => __builder =>
+{
+    @foreach (var item in items)
+    {
+        @if (item.Item.Count > 0)
+        {
+            @GetTitle(item.Text);
+            @GetChildItems(item.Item);
+        }
+        else
+        {
+            @GetAnswerDisplay(item);
+        }
+        <br/>
+    }
+};
+```
+
+As you can see we have a `DynamicFragment` inside the `EditForm` element. That is a render fragment that we'll be using the build form.
+
+We have two key functions: `RenderComponent` and `GetChildItems`. First function receives the rendered UI and starts 
+
+
+On the code behind:
 
 ``` C#
 protected override async Task OnInitializedAsync()
@@ -25,4 +65,6 @@ protected override async Task OnInitializedAsync()
     .
 }
 ```
+
+
 
