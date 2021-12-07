@@ -4,8 +4,8 @@ Initially, I thought this would be a very trivial effort. I'd create a PowerApp 
 ## Graph API
 The one thing I knew I wanted to use for my data source was the Microsoft Graph API. (I kinda hate this name because 'Graph' is too vague.) The Microsoft Graph API does a lot of things, but I knew it was a trusted data source for our organization hierarchy. This data already shows up in places like Outlook and Microsoft Teams.
 <div>
-  <img src="https://github.com/microsoft/emerging-opportunities/blob/main/side-projects/org-chart/OutlookOrgChartExample.png" height="200" />
-  <img src="https://github.com/microsoft/emerging-opportunities/blob/main/side-projects/org-chart/TeamsOrgChartExample.png" height="200" />
+  <img src="./OutlookOrgChartExample.png" height="200" />
+  <img src="./TeamsOrgChartExample.png" height="200" />
  </div>
 
 ## Power App
